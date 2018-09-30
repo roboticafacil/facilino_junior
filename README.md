@@ -1,4 +1,4 @@
-Facilino
+Facilino Junior
 =========
 
 Visual programming environment for Arduino.
