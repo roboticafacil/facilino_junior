@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="Index,Allow">
+<meta name="description" content="Translation tool for Facilino"/>
+<link rel="shortcut icon" href="assets/images/facilino-cuadrado-fondo-transparente-128x128.png" type="image/x-icon">
+<meta name="keywords" content="facilino,robot,arduino,dyor" />
+<meta name="author" content="Robótica Fácil"/>
+<title>Facilino Junior Translate</title>
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/theme/css/style.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="facilino.css">
+<link rel="stylesheet" type="text/css" href="javascript/highlight/styles/default.css">
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<style>
+select.icon-menu option {
+background-repeat:no-repeat;
+background-position:bottom left;
+padding-left:30px;
+}
+</style>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smooth-scroll/smooth-scroll.js"></script>
+<script src="assets/dropdown/js/script.min.js"></script>
+<script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="javascript/underscore/underscore.js"></script>
+<script src="javascript/highlight/highlight.pack.js"></script>
+<script src="javascript/blockly-bq/blockly_compressed.js"></script>
+<script src="javascript/blockly-bq/arduino_compressed.js"></script>
+<script src="javascript/blockly-bq/FieldButton.js"></script>
+<script src="facilino_junior.js"></script>
+<style>.button_wrapper {
+  text-align: center;
+  color: red;
+}
+.button {
+  background-color: #2e2efe;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ h4 { margin-top: 20px; }
+ h5 { margin-top: 10px;}
+
+</style>
+<script>
+function injectInstruction(block,blockDiv) {
+	var instructionPreview = document.getElementById(blockDiv);
+	var mainWorkspace = Blockly.inject(blockDiv, {readOnly:false, collapse: false});
+	mainWorkspace.clear();
+	var block = mainWorkspace.newBlock(block);
+	block.initSvg();
+	block.render();
+	//block.setMovable(false);
+	block.setDeletable(false);
+	block.moveBy(15, 10);
+	var bbox = block.getHeightWidth();
+	instructionPreview.style.height = (bbox.height+50)+ 'px';
+	instructionPreview.style.width = (bbox.width+50) + 'px';
+	window.dispatchEvent(new Event('resize'));
+	return block;
+}
+function reinjectInstruction(block,blockDiv,key) {
+  var el = document.getElementById(blockDiv);
+  var iDiv = document.createElement("div");
+  var input = document.getElementById(key);
+  iDiv.id = blockDiv;
+  el.parentNode.replaceChild(iDiv, el);
+  Facilino.locales.setKey(key,input.value);
+  console.log(window.langKeys);
+  window.langKeys[key]=input.value;
+  Facilino.load({ zoom: 1 });
+  injectInstruction(block,blockDiv);
+}
+function injectToolbox(blockDiv) {
+	var instructionPreview = document.getElementById(blockDiv);
+	var mainWorkspace = Blockly.inject(blockDiv, {readOnly:false, collapse: false, toolbox: Blockly.createToolbox()});
+	mainWorkspace.clear();
+	$('.blocklySvg, #'+blockDiv).height('400px');
+	window.dispatchEvent(new Event('resize'));
+	
+	//$('.blocklySvg, #blockly_categories').width('100%');
+	//$('.blocklySvg, #blockly_categories').float('left');
+}
+function reinjectToolbox(blockDiv,key) {
+  var el = document.getElementById(blockDiv);
+  var iDiv = document.createElement("div");
+  var input = document.getElementById(key);
+  iDiv.id = blockDiv;
+  el.parentNode.replaceChild(iDiv, el);
+  Facilino.locales.setKey(key,input.value);
+  window.langKeys[key]=input.value;
+  Facilino.load({ zoom: 1 });
+  injectToolbox(blockDiv);
+}
+</script>
+<script type="text/javascript" src="javascript/jquery/dist/jquery.min.js"> </script>
+</head>
+<body>
+<!-- <h3>Facilino Translation Tool</h3>
+<p>Some keywords are shared among instructions on purpose to reduce the amount of translation, when updating all fields related with those keywords will be automatically updated. Our recommendation is to update on every reviewed instruction so changes can be intermediately reflected.</p>
+<p>Bugs: Some keywords might be unintentionally copy/pasted, so if you think this is a bug, please let us know.</p>
+-->
+<div>
+	<section class="menu cid-qAignIVLHL" once="menu" id="menu1-e" data-rv-view="7">
+	<nav class="navbar navbar-expand beta-menu align-items-center navbar-fixed-top navbar-toggleable-sm">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://roboticafacil.es" target="_blank">
+                         <img src="assets/images/facilino-cuadrado-fondo-transparente-512x512.png" alt="Facilino" title="Facilino" media-simple="true" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://roboticafacil.es" target="_blank"><h2>&nbsp;&nbsp;Facilino Jr. Translate</h2></a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-buttons mbr-section-btn"><button class="btn btn-sm btn-primary-outline display-4" title="Language settings" onclick="showHideLanguage()"><span class="mbri-flag mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 148, 0);"></span></button></div>
+			<select id="language" class="text-black dropdown-toggle display-6 icon-menu" onchange="langChange(this.value)" style="display: none">
+		<option value="ca-ES" class="text-black dropdown-item display-6" style="background-image:url(img/flags/catalonia.png)">Catal&agrave;</option>
+		<option value="da-DK" class="text-black dropdown-item display-6" style="background-image:url(img/flags/denmark.png)">Dansk</option>
+		<option value="de-DE" class="text-black dropdown-item display-6" style="background-image:url(img/flags/germany.png)">Deutsch</option>
+		<option value="en-GB" class="text-black dropdown-item display-6" style="background-image:url(img/flags/united-kingdom.png)">English</option>
+		<option value="es-ES" class="text-black dropdown-item display-6" style="background-image:url(img/flags/spain.png)">Espa&ntilde;ol</option>
+		<option value="es-LT" class="text-black dropdown-item display-6" style="background-image:url(img/flags/spain.png)">Espa&ntilde;ol (latino)</option>
+		<option value="eu-ES" class="text-black dropdown-item display-6" style="background-image:url(img/flags/basque-country.png)">Euskera</option>
+		<option value="fr-FR" class="text-black dropdown-item display-6" style="background-image:url(img/flags/france.png)">Fran&ccedil;ais</option>
+		<option value="gl-ES" class="text-black dropdown-item display-6" style="background-image:url(img/flags/galician.png)">Galego</option>
+		<option value="it-IT" class="text-black dropdown-item display-6" style="background-image:url(img/flags/italy.png)">Italiano</option>
+		<option value="nl-NL" class="text-black dropdown-item display-6" style="background-image:url(img/flags/netherlands.png)">Nederlands</option>
+		<option value="nb-NO" class="text-black dropdown-item display-6" style="background-image:url(img/flags/norway.png)">Norsk</option>
+		<option value="pl-PL" class="text-black dropdown-item display-6" style="background-image:url(img/flags/poland.png)">Polski</option>
+		<option value="pt-PT" class="text-black dropdown-item display-6" style="background-image:url(img/flags/portugal.png)">Portugues</option>
+		<option value="ru-RU" class="text-black dropdown-item display-6" style="background-image:url(img/flags/russia.png)">&#x420;&#x443;&#x441;&#x441;&#x43a;&#x438;&#x439;</option>
+		</select>
+		<div class="navbar-buttons mbr-section-btn"><button id="button_submit" class="btn btn-sm btn-primary-outline display-4" title="Download" onclick="submitData()"><span class="mbri-save mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 148, 0);"></span></button></div>
+		<div class="navbar-buttons mbr-section-btn"><button id="button_refresh" class="btn btn-sm btn-primary-outline display-4" title="Restore" onclick="restoreData()"><span class="mbri-refresh mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 148, 0);"></span></button></div>
+		<div class="navbar-buttons mbr-section-btn"><button class="btn btn-sm btn-primary-outline display-4" title="Return to Facilino" onclick="window.location='./Facilino.html'"><span class="mbri-globe mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 148, 0);"></span></button></div>
+        </div>
+	</nav>
+	</section>
+	</div>
+	<div id="all">Wait a moment...</div>
+<script>
+if (localStorage.getItem("language")===undefined || localStorage.getItem("language")===null)
+			localStorage.setItem('language', 'en-GB');
+window.FacilinoLanguage = localStorage.getItem("language");
+window.FacilinoHardware = null;
+$("#language").val(window.FacilinoLanguage);
+window.dataLang = {};
+window.cat_keys = {};
+window.subcat_keys = {};
+window.origLang='en-GB';
+document.getElementById("language").onchange = function() {restoreData();};
+//if (localStorage.getItem('restoreLang')==='1' || localStorage.getItem('restoreLang')===undefined || localStorage.getItem('restoreLang')===null)
+//{
+//	localStorage.setItem('restoreLang', '0');
+	readTranslationFile(document.getElementById("language").value);
+//}
+//else
+//{
+//	window.dataLang = localStorage.getItem("dataLang");
+//}
+changeFunction();
+function readTranslationFile(transLang)
+{
+	$.ajax({url: 'lang/facilino_en-GB.json',dataType: "text",async: false,}).done(function(text) {window.langKeysEng = $.parseJSON(text).langs['en-GB'].keys; 
+	$.ajax({url: 'lang/facilino_'+transLang+'.json',dataType: "text",async: false,}).done(function(text1) {
+
+	window.langKeys = $.parseJSON(text1).langs[transLang].keys;
+	
+	$.each(window.langKeysEng, function (key, text) {
+		var tblRow = "";
+		if (window.langKeys==undefined)
+			window.langKeys={};
+		if (window.langKeys[key]==undefined)
+		{
+		  console.log(key);
+		  window.langKeys[key]=window.langKeysEng[key];
+		}
+		if (window.langKeys[key]=='')
+		{
+		  console.log(key);
+		  window.langKeys[key]=window.langKeysEng[key];
+		}
+		if (key.indexOf("_CATEGORY_") !== -1)
+			window.cat_keys[key] = {orig: window.langKeysEng[key], translation: window.langKeys[key]};
+		if (key.indexOf("_SUBCATEGORY_") !== -1)
+			window.subcat_keys[key] = {orig: window.langKeysEng[key], translation: window.langKeys[key]};
+	});
+	
+	
+	});
+	});
+}
+function changeFunction() {
+	var transLang=document.getElementById("language").value;
+	localStorage.setItem('language',transLang);
+	window.FacilinoLanguage = transLang;
+	//window.langKeys = window.dataLang.langs[transLang].keys;
+	//window.langKeysEng = window.dataLang.langs[window.origLang].keys;
+	Facilino.load({ zoom: 1});
+	var blocks = Blockly.getBlocks();
+	
+	
+	var all_div_old = document.getElementById("all");
+	var all_div = document.createElement('div');
+	all_div.setAttribute("id","all");
+	//document.body.appendChild(all_div);
+	document.body.replaceChild(all_div, all_div_old);
+	
+	all_div.appendChild(document.createElement('p'));
+	var cat_div = document.createElement('h3');
+	cat_div.setAttribute("id","cat_div");
+	cat_div.innerHTML = "Categories";
+	all_div.appendChild(cat_div);
+	var iDiv = document.createElement('div');
+	iDiv.id = 'blockly_categories';
+	all_div.appendChild(iDiv);
+	injectToolbox(iDiv.id);
+	all_div.appendChild(document.createElement('p'));
+	var cat_tab = document.createElement("TABLE");
+	cat_tab.setAttribute("id","cat_tab");
+	cat_tab.border=2;
+	cat_tab.createTHead();
+	var cat_counter=1;
+	var row   = cat_tab.insertRow(0);
+	row.insertCell(0).innerHTML  = "<th><b>English Text</b></th>";
+	row.insertCell(1).innerHTML  = "<th><b>Translation</b></th>"; 
+	for (category in blocks) {
+		if (blocks.hasOwnProperty(category)) {
+			var row   = cat_tab.insertRow(cat_counter);
+			cat_counter++;
+			for (cat_key in window.cat_keys)
+			{
+				if (window.cat_keys[cat_key].translation===category)
+				{
+					var cell1 = row.insertCell(0);
+					cell1.width = window.innerWidth/2;
+					var cell2 = row.insertCell(1);
+					cell2.width = window.innerWidth/2;
+					cell1.innerHTML = window.cat_keys[cat_key].orig;
+					cell2.innerHTML = "<input type=\"text\" style=\"width: "+(window.innerWidth/2)+"px;\" id=\""+cat_key+"\" name=\""+cat_key+"\" value=\""+window.cat_keys[cat_key].translation+"\" onchange=\"reinjectToolbox('blockly_categories','"+cat_key+"')\"/>";
+					break;
+				}
+			}
+			for (subcategory in blocks[category]) {
+				if (subcategory!=='root'){
+					var row   = cat_tab.insertRow(cat_counter);
+					//subcat_counter++;
+					cat_counter++;
+					for (subcat_key in window.subcat_keys)
+					{
+						if (window.subcat_keys[subcat_key].translation===subcategory)
+						{
+							var cell1 = row.insertCell(0);
+							cell1.width = window.innerWidth/2;
+							var cell2 = row.insertCell(1);
+							cell2.width = window.innerWidth/2;
+							cell1.innerHTML = window.subcat_keys[subcat_key].orig;
+							cell2.innerHTML = "<input type=\"text\" style=\"width: "+(window.innerWidth/2)+"px;\" id=\""+subcat_key+"\" name=\""+subcat_key+"\" value=\""+window.subcat_keys[subcat_key].translation+"\" onchange=\"reinjectToolbox('blockly_categories','"+subcat_key+"')\"/>";
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	//all_div.appendChild(subcat_tab);
+	all_div.appendChild(cat_tab);
+	all_div.appendChild(document.createElement('p'));
+	
+	var categoryItem = function(type) {
+		var inst_title_div = document.createElement('h5');
+		
+		inst_title_div.innerHTML = type;
+		all_div.appendChild(inst_title_div);
+		var iDiv = document.createElement('div');
+		iDiv.id = 'blockly_'+type;
+		all_div.appendChild(iDiv);
+		var inst_tab = document.createElement("TABLE");
+		inst_tab.border=2;
+		inst_tab.createTHead();
+		var instcat_counter=1;
+		var row   = inst_tab.insertRow(0);
+		row.insertCell(0).innerHTML  = "<th><b>English Text</b></th>";
+		row.insertCell(1).innerHTML  = "<th><b>Translation</b></th>";
+		all_div.appendChild(inst_tab);
+		var block = injectInstruction(type,iDiv.id);
+		if (block.keys!==undefined)
+			block.keys.forEach(function (key){
+				var row   = inst_tab.insertRow(instcat_counter);
+				instcat_counter++;
+				var cell1 = row.insertCell(0);
+				cell1.width = window.innerWidth/2;
+				var cell2 = row.insertCell(1);
+				cell2.width = window.innerWidth/2;
+				cell1.innerHTML = window.langKeysEng[key];
+				cell2.innerHTML = "<input type=\"text\" style=\"width: "+(window.innerWidth/2)+"px;\" id=\""+key+"\" name=\""+key+"\" value=\""+window.langKeys[key]+"\" onchange=\"reinjectInstruction('"+type+"','"+iDiv.id+"','"+key+"')\"/>";
+			});
+    };
+	
+	var instcat_div = document.createElement('h3');
+	instcat_div.innerHTML = "Instructions";
+	all_div.appendChild(instcat_div);
+	for (category in blocks) {
+		if (blocks.hasOwnProperty(category)) {
+			for (subcategory in blocks[category]) {
+				if (subcategory==='root')
+					blocks[category]['root'].forEach(categoryItem);
+				if (subcategory!=='root'){
+					blocks[category][subcategory].forEach(categoryItem);
+				}
+			}
+		}
+	}
+}
+
+function submitData(){
+	var transLang=document.getElementById("language").value;
+	var str={langs: {}};
+	str.langs[transLang] = {keys: {}};
+	str.langs[transLang].keys= window.langKeys;
+	var json_str = JSON.stringify(str,null,'\t');
+	saveFile('facilino_'+transLang+'.json', "data:application/json", new Blob([json_str],{type:""}));
+}
+
+function restoreData(){
+	//var element = document.getElementById("all"); 
+	//if (element !== null)
+	//  element.parentNode.removeChild(element); 
+	readTranslationFile(document.getElementById("language").value);
+	changeFunction();
+}
+
+function updateData(){
+	var transLang=document.getElementById("language").value;
+	for (key in window.langKeys)
+	{
+		//window.dataLang.langs[transLang].keys[key]=document.getElementById(key).value;
+		//console.log(key);
+		var element = document.getElementById(key);
+		if (element !==null)
+			window.langKeys[key]=element.value;
+		//console.log(document.getElementById(key));
+	}
+	//localStorage.setItem('dataLang',window.dataLang);
+	var element = document.getElementById("all"); 
+	if (element !== null)
+	  element.parentNode.removeChild(element); 
+	changeFunction();
+}
+
+function saveFile (name, type, data) {
+    if (data != null && navigator.msSaveBlob)
+        return navigator.msSaveBlob(new Blob([data], { type: type }), name);
+    var a = $("<a style='display: none;'/>");
+    var url = window.URL.createObjectURL(new Blob([data], {type: type}));
+    a.attr("href", url);
+    a.attr("download", name);
+    $("body").append(a);
+    a[0].click();
+    setTimeout(function(){  // fixes firefox html removal bug
+        window.URL.revokeObjectURL(url);
+        a.remove();
+    }, 500);  
+}
+
+function langChange(lang)
+{
+	localStorage.setItem('language',lang);
+	window.location.reload();
+}
+
+function processorChange(processor)
+{
+	localStorage.setItem('processor',processor);
+	window.location.reload();
+}
+
+function showHideLanguage()
+{
+	var lang=document.getElementById('language');
+	//console.log(lang.style.display);
+	if (lang.style.display==='none')
+		lang.style.display='initial';
+	else
+		lang.style.display='none';
+}
+
+function showHideProcessor()
+{
+	var proc=document.getElementById('processor');
+	if (proc.style.display==='none')
+		proc.style.display='initial';
+	else
+		proc.style.display='none';
+}
+</script>
+</body>
+</html>

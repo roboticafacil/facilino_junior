@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Facilino Junior
+Comment=Visual Programming Environment for DYOR
+Icon=/usr/share/facilino_junior/icons/icon.png
+Exec=facilino_junior %f
+TryExec=facilino_junior
+Categories=Education;Development;
+StartupNotify=true
+Terminal=false
