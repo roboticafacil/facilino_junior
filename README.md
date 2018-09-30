@@ -1,7 +1,7 @@
 Facilino
 =========
 
-Visual programming environment for Arduino and ESP.
+Visual programming environment for Arduino.
 
 
 Install
