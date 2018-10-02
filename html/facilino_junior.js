@@ -821,7 +821,7 @@
             with(obj) {
                 __p += '_servo' +
                     ((__t = (dropdown_pin)) == null ? '' : __t) +
-                    '.write((('+'((('+((__t = (value_speed)) == null ? '' : __t)+'*90)/100+90));\n';
+                    '.write((('+((__t = (value_speed)) == null ? '' : __t)+'*90)/100+90));\n';
 
             }
             return __p
