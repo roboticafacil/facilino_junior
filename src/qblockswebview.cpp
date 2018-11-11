@@ -1,11 +1,29 @@
 #include "qblockswebview.h"
 
-/*QBlocksWebView::QBlocksWebView() {
-}*/
+#ifndef QT_OLD_VERSION_5_5
+QBlocksWebView::QBlocksWebView() {
+}
+
+QBlocksWebView::QBlocksWebView(QWidget *parent): QWebEngineView(parent)
+#else
 QBlocksWebView::QBlocksWebView(QWidget *parent): QWebEngineView(parent), child_(nullptr)
+#endif
 {
 }
 
+#ifndef QT_OLD_VERSION_5_5
+void QBlocksWebView::wheelEvent(QWheelEvent *event)
+{
+    if (event->delta()>0)
+        zoomIn();
+    else
+        zoomOut();
+    event->accept();
+}
+#endif
+
+
+#ifdef QT_OLD_VERSION_5_5
 bool QBlocksWebView::eventFilter(QObject *obj, QEvent *ev)
 {
         // emit delegatePaint on paint event of the last added QOpenGLWidget child
@@ -16,26 +34,24 @@ bool QBlocksWebView::eventFilter(QObject *obj, QEvent *ev)
             // or just emit signal to notify other objects
             emit delegateWheel(we);
         }
-
         return QWebEngineView::eventFilter(obj, ev);
 }
 
 bool QBlocksWebView::event(QEvent * ev)
-    {
-        if (ev->type() == QEvent::ChildAdded) {
-            QChildEvent *child_ev = static_cast<QChildEvent*>(ev);
+{
+    if (ev->type() == QEvent::ChildAdded) {
+        QChildEvent *child_ev = static_cast<QChildEvent*>(ev);
 
-            // there is also QObject child that should be ignored here;
-            // use only QOpenGLWidget child
-            QOpenGLWidget *w = qobject_cast<QOpenGLWidget*>(child_ev->child());
-            if (w) {
-                child_ = w;
-                w->installEventFilter(this);
-            }
+        // there is also QObject child that should be ignored here;
+        // use only QOpenGLWidget child
+        QOpenGLWidget *w = qobject_cast<QOpenGLWidget*>(child_ev->child());
+        if (w) {
+            child_ = w;
+            w->installEventFilter(this);
         }
-        return QWebEngineView::event(ev);
     }
-
+    return QWebEngineView::event(ev);
+}
 
 void QBlocksWebView::delegateWheel(QWheelEvent *event)
 {
@@ -44,12 +60,7 @@ void QBlocksWebView::delegateWheel(QWheelEvent *event)
     float scale = event->delta() / 120.0 / 10.0;
     doZoom(scale);
 }
-
-/*
- * Deactivate. Bad usability.
- *
-
-*/
+#endif
 
 void QBlocksWebView::doZoom(float scale) {
     // Apply zoom (in: scale > 0, out: scale < 0)
