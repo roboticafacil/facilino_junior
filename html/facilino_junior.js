@@ -1818,8 +1818,6 @@
                 this.quarkConnections_ = null;
                 this.quarkArguments_ = null;
                 this.last_variables = this.getVariables(this.getFieldValue('PROCEDURES'));
-				this.setPreviousStatement(true,'code');
-                this.setNextStatement(true,'code');
             },
             validName: function(name) {
                 if (name && name.length > 0) {
