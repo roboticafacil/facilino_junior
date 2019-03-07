@@ -3370,7 +3370,7 @@
 			Blockly.Arduino.inout_analog_read = function() {
             var dropdown_pin = this.getFieldValue('PIN');
             var code = '';
-            Blockly.Arduino.setups_['setup_green_analog_read' + dropdown_pin] = JST['inout_analog_read_setups']({'dropdown_pin': dropdown_pin});
+            Blockly.Arduino.setups_['setup_analog_read' + dropdown_pin] = JST['inout_analog_read_setups']({'dropdown_pin': dropdown_pin});
             code += JST['inout_analog_read']({'dropdown_pin': dropdown_pin});
             return [code, Blockly.Arduino.ORDER_ATOMIC];
 			};
@@ -4856,14 +4856,11 @@
 		
 		
 		Blockly.Arduino.ambient_humid_humiditySoil = function() {
-				var code = '';
-				var dropdown_pin = this.getFieldValue('PIN');
-				var type = 'DHT11';
-				Blockly.Arduino.definitions_['dht']=JST['dht_definitions_include']({});
-				Blockly.Arduino.definitions_['declare_var_define_dht'+type+dropdown_pin]=JST['dht_definitions_variables']({pin : dropdown_pin, type: type});
-				Blockly.Arduino.setups_['setup_dht' + dropdown_pin] = JST['dht_setups']({pin: dropdown_pin, type: type});
-				code += 'sensor'+type+'_'+dropdown_pin+'.readHumidity()'
-				return [code,Blockly.Arduino.CODE_ATOMIC];
+			var dropdown_pin = this.getFieldValue('PIN');
+            var code = '';
+            Blockly.Arduino.setups_['setup_analog_read' + dropdown_pin] = JST['inout_analog_read_setups']({'dropdown_pin': dropdown_pin});
+            code += JST['inout_analog_read']({'dropdown_pin': dropdown_pin});
+            return [code, Blockly.Arduino.ORDER_ATOMIC];
         };
 
 		Blockly.Blocks.ambient_humid_humiditySoil = {
@@ -4874,7 +4871,7 @@
 			output: 'number',
             init: function() {
 			this.setColour(Facilino.LANG_COLOUR_AMBIENT);
-			this.appendDummyInput('').appendField(new Blockly.FieldImage("img/blocks/humidity.svg",20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldImage("img/blocks/dht11.svg",20*options.zoom,20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT);
+			this.appendDummyInput('').appendField(new Blockly.FieldImage("img/blocks/humidity_analog.svg",20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldImage("img/blocks/soil.svg",48*options.zoom,20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT);
 			this.appendDummyInput('').appendField(new Blockly.FieldImage("img/blocks/analog_signal.svg", 20*options.zoom, 20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldDropdown(profiles.default.analog),'PIN');
 			this.setInputsInline(true);
 			this.setPreviousStatement(false);
