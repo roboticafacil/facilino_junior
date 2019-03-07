@@ -144,7 +144,8 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Reads the digital output of a gas sensor (adjust level with the potentiometer).",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Reads barometric pressure with a BMP180 sensor in Pa.",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Reads temperature with BMP180 sensor in Celsius degrees.",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimates altitude. Estimated sea-level preassure is 101325 Pa."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimates altitude. Estimated sea-level preassure is 101325 Pa.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Reads humidity from an analog soil sensor (0-1023)."
 			}
 		}
 	}

@@ -111,6 +111,8 @@
 					profiles['default'] = profiles.arduinoNano;
 				else if (Facilino.locales.hardware==='ArduinoUno')
 					profiles['default'] = profiles.arduinoUno;
+				else if (Facilino.locales.hardware==='EasyPlug')
+					profiles['default'] = profiles.easyPlug;
 				else 
 					profiles['default'] = profiles.arduinoNano;
 				});
@@ -789,6 +791,18 @@
             }
         return __p
     };
+	
+	this["JST"]["pinmode_setups_clk"] = function(obj) {
+            obj || (obj = {});
+            var __t, __p = '',
+                __e = _.escape;
+            with(obj) {
+                __p += 'pinMode(' +
+                    ((__t = (clk_pin)) == null ? '' : __t) +
+                    ',OUTPUT);';
+            }
+            return __p
+        };
 
     this["JST"]["pinmode_setups_dout"] = function(obj) {
             obj || (obj = {});
@@ -1818,6 +1832,8 @@
                 this.quarkConnections_ = null;
                 this.quarkArguments_ = null;
                 this.last_variables = this.getVariables(this.getFieldValue('PROCEDURES'));
+				this.setPreviousStatement(true,'code');
+                this.setNextStatement(true,'code');
             },
             validName: function(name) {
                 if (name && name.length > 0) {
@@ -3921,13 +3937,14 @@
 				Blockly.Arduino.definitions_['define_maxAll'] = JST['led_matrix_definitions_maxAll']({});
 				Blockly.Arduino.definitions_['define_putByte'] = JST['led_matrix_definitions_putByte']({});
 				Blockly.Arduino.definitions_['define_expression'] = JST['led_matrix_definition_expression']({});
+				//console.log(cs_pin);
 				Blockly.Arduino.setups_['setup_cs_' + cs_pin + din_pin + clk_pin] = JST['pinmode_setups_dout']({'cs_pin': cs_pin});
 				Blockly.Arduino.setups_['setup_din_' + cs_pin + din_pin + clk_pin] = JST['pinmode_setups_din']({'din_pin': din_pin});
-				Blockly.Arduino.setups_['setup_clk_' + cs_pin + din_pin + clk_pin] = JST['pinmode_setups_dout']({'clk_pin': clk_pin});
+				Blockly.Arduino.setups_['setup_clk_' + cs_pin + din_pin + clk_pin] = JST['pinmode_setups_clk']({'clk_pin': clk_pin});
 				Blockly.Arduino.setups_['setup_LEDMatrix_' + cs_pin + din_pin + clk_pin] = JST['led_matrix_setups_LEDMatrix']({'cs_pin' : cs_pin,'din_pin' : din_pin,'clk_pin': clk_pin});
 				var expr ='';
 				var row = expr_str.split(',');
-				console.log(expr_str);
+				//console.log(expr_str);
 				var col = [];
 				if (dropdown_configuration==='FALSE'){
 					row[0] = ((row[0]%2)<1? 0 : 128) + ((row[0]%4)<2? 0 : 64) + ((row[0]%8)<4? 0 : 32) + ((row[0]%16)<8? 0 : 16) + ((row[0]%32)<16? 0 : 8) + ((row[0]%64)<32? 0 : 4) + ((row[0]%128)<64? 0 : 2) + (row[0]<128? 0 : 1);
@@ -4834,6 +4851,36 @@
             this.setNextStatement(false);
 			this.setOutput(true,Number);
             this.setTooltip(Facilino.locales.getKey('LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP'));
+            }
+        };
+		
+		
+		Blockly.Arduino.ambient_humid_humiditySoil = function() {
+				var code = '';
+				var dropdown_pin = this.getFieldValue('PIN');
+				var type = 'DHT11';
+				Blockly.Arduino.definitions_['dht']=JST['dht_definitions_include']({});
+				Blockly.Arduino.definitions_['declare_var_define_dht'+type+dropdown_pin]=JST['dht_definitions_variables']({pin : dropdown_pin, type: type});
+				Blockly.Arduino.setups_['setup_dht' + dropdown_pin] = JST['dht_setups']({pin: dropdown_pin, type: type});
+				code += 'sensor'+type+'_'+dropdown_pin+'.readHumidity()'
+				return [code,Blockly.Arduino.CODE_ATOMIC];
+        };
+
+		Blockly.Blocks.ambient_humid_humiditySoil = {
+            category: Facilino.locales.getKey('LANG_CATEGORY_AMBIENT'),
+            category_colour: Facilino.LANG_COLOUR_AMBIENT,
+			colour: Facilino.LANG_COLOUR_AMBIENT,
+			keys: ['LANG_HUMID_READ_HUMID_SOIL_TOOLTIP'],
+			output: 'number',
+            init: function() {
+			this.setColour(Facilino.LANG_COLOUR_AMBIENT);
+			this.appendDummyInput('').appendField(new Blockly.FieldImage("img/blocks/humidity.svg",20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldImage("img/blocks/dht11.svg",20*options.zoom,20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT);
+			this.appendDummyInput('').appendField(new Blockly.FieldImage("img/blocks/analog_signal.svg", 20*options.zoom, 20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldDropdown(profiles.default.analog),'PIN');
+			this.setInputsInline(true);
+			this.setPreviousStatement(false);
+            this.setNextStatement(false);
+			this.setOutput(true,Number);
+            this.setTooltip(Facilino.locales.getKey('LANG_HUMID_READ_HUMID_SOIL_TOOLTIP'));
             }
         };
 		
