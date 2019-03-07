@@ -48,6 +48,7 @@ private:
     int documentHistoryStep;
     bool alert;
     QSignalMapper *signalMapper;
+    bool boardChanged;
 
     void actionSaveAndSaveAs(bool askFileName, const QString &directory = "");
     void actionOpenInclude(const QString &title,

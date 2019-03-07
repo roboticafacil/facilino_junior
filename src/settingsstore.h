@@ -34,6 +34,7 @@ public:
     QString license();
 
     static const QString index2board[SIZE_LIST];
+    static const QString index2name[SIZE_LIST];
 
     void copyDefaultSettings(const QString &fileName = CONFIG_INI,
                              bool overwrite = false);

@@ -49,7 +49,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Hide graphs widget
     ui->graphsWidget->setVisible(false);
-
+    this->boardChanged=false;
 
     // Set monospaced font in the monitor
     const QFont fixedFont = QFontDatabase::systemFont(QFontDatabase::FixedFont);
@@ -152,7 +152,7 @@ void MainWindow::arduinoExec(const QString &action) {
     arguments << action;
     // Board parameter
     if (ui->boardBox->count() > 0) {
-        arguments << "--board" << ui->boardBox->currentText();
+        arguments << "--board" << SettingsStore::index2board[ui->boardBox->currentIndex()];
     }
     // Port parameter
     if (ui->serialPortBox->count() > 0) {
@@ -631,9 +631,24 @@ void MainWindow::setArduinoBoard() {
 
 void MainWindow::onBoardChanged() {
     // Board changed, update settings
-    settings->setArduinoBoard(ui->boardBox->currentText());
-    settings->setArduinoBoardFacilino(SettingsStore::index2board[ui->boardBox->currentIndex()]);
-    loadBlockly();
+    if (!this->boardChanged)
+        {
+            settings->setArduinoBoard(ui->boardBox->currentText());
+            settings->setArduinoBoardFacilino(SettingsStore::index2name[ui->boardBox->currentIndex()]);
+            loadBlockly();
+            this->boardChanged=true;
+        }
+        else
+        {
+            QMessageBox::StandardButton reply;
+            reply = QMessageBox::question(this, tr("Board changed"), tr("Are you sure you want to change the board? All code will be lost!"),QMessageBox::Yes|QMessageBox::No);
+            if (reply == QMessageBox::Yes)
+            {
+                settings->setArduinoBoard(ui->boardBox->currentText());
+                settings->setArduinoBoardFacilino(SettingsStore::index2name[ui->boardBox->currentIndex()]);
+                loadBlockly();
+            }
+        }
 }
 
 void MainWindow::onLoadFinished(bool finished) {

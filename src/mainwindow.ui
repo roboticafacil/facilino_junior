@@ -110,7 +110,7 @@
                 <string/>
                </property>
                <property name="icon">
-                <iconset>
+                <iconset resource="Resources.qrc">
                  <normaloff>:/icons/icons/enter-16x16.png</normaloff>:/icons/icons/enter-16x16.png</iconset>
                </property>
               </widget>
@@ -292,7 +292,7 @@ pressed: { border: 1px };</string>
          <string notr="true"/>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="Resources.qrc">
           <normaloff>:/icons/icons/btn_donate_LG.png</normaloff>:/icons/icons/btn_donate_LG.png</iconset>
         </property>
         <property name="iconSize">
@@ -335,7 +335,7 @@ pressed: { border: 1px };</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/icons/icons/chip-micro-24x24.png</pixmap>
+         <pixmap resource="Resources.qrc">:/icons/icons/chip-micro-24x24.png</pixmap>
         </property>
        </widget>
       </item>
@@ -343,22 +343,22 @@ pressed: { border: 1px };</string>
        <widget class="QComboBox" name="boardBox">
         <item>
          <property name="text">
-          <string>arduino:avr:uno</string>
+          <string>Arduino Uno</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>arduino:avr:nano:cpu=atmega328</string>
+          <string>Arduino Nano</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>arduino:avr:nano:cpu=atmega328old</string>
+          <string>Arduino Nano (old bootloader)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>arduino:avr:nano:cpu=atmega168</string>
+          <string>EasyPlug</string>
          </property>
         </item>
        </widget>
@@ -385,7 +385,7 @@ pressed: { border: 1px };</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/icons/icons/usb-24x24.png</pixmap>
+         <pixmap resource="Resources.qrc">:/icons/icons/usb-24x24.png</pixmap>
         </property>
        </widget>
       </item>
@@ -518,7 +518,7 @@ pressed: { border: 1px };</string>
   </widget>
   <action name="actionVerify">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/check_alt_24x24.png</normaloff>:/icons/icons/check_alt_24x24.png</iconset>
    </property>
    <property name="text">
@@ -533,7 +533,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionUpload">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/arrow_right_alt1_24x24.png</normaloff>:/icons/icons/arrow_right_alt1_24x24.png</iconset>
    </property>
    <property name="text">
@@ -545,7 +545,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/upload_18x24.png</normaloff>:/icons/icons/upload_18x24.png</iconset>
    </property>
    <property name="text">
@@ -554,7 +554,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionSave">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/download_18x24.png</normaloff>:/icons/icons/download_18x24.png</iconset>
    </property>
    <property name="text">
@@ -563,7 +563,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionNew">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/document_alt_stroke_18x24.png</normaloff>:/icons/icons/document_alt_stroke_18x24.png</iconset>
    </property>
    <property name="text">
@@ -572,7 +572,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionSettings">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/cog_24x24.png</normaloff>:/icons/icons/cog_24x24.png</iconset>
    </property>
    <property name="text">
@@ -651,7 +651,7 @@ pressed: { border: 1px };</string>
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/magnifying_glass_24x24.png</normaloff>:/icons/icons/magnifying_glass_24x24.png</iconset>
    </property>
    <property name="text">
@@ -727,7 +727,7 @@ pressed: { border: 1px };</string>
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/bar-chart-24x24.png</normaloff>:/icons/icons/bar-chart-24x24.png</iconset>
    </property>
    <property name="text">
@@ -776,7 +776,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actiondelete">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/cancel-button.png</normaloff>:/icons/icons/cancel-button.png</iconset>
    </property>
    <property name="text">
@@ -791,7 +791,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionadd">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/add-button-inside-black-circle.png</normaloff>:/icons/icons/add-button-inside-black-circle.png</iconset>
    </property>
    <property name="text">
@@ -806,7 +806,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionupdate">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/update-arrows.png</normaloff>:/icons/icons/update-arrows.png</iconset>
    </property>
    <property name="text">
@@ -861,7 +861,7 @@ pressed: { border: 1px };</string>
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset>
+    <iconset resource="Resources.qrc">
      <normaloff>:/icons/icons/copy.png</normaloff>:/icons/icons/copy.png</iconset>
    </property>
    <property name="text">
@@ -884,7 +884,9 @@ pressed: { border: 1px };</string>
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>actionVerify</sender>
