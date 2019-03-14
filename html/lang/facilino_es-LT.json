@@ -51,6 +51,9 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "verdadero",
 				"LANG_LOGIC_BOOLEAN_FALSE": "falso",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Devuelve verdadero o falso en función de lo seleccionado.",
+				"LANG_LOGIC_STATE_HIGH": "alto",
+				"LANG_LOGIC_STATE_LOW": "bajo",
+				"LANG_LOGIC_STATE_TOOLTIP": "Devuelve alto o bajo en función de lo seleccionado",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Compara si las dos entradas son iguales.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Compara si las dos entradas no son iguales entre sí.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Compara si la primera entrada es menor que la segunda entrada.",
@@ -145,7 +148,9 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Lee la salida digital de un sensor de gas",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Lee la presión barométrica del sensor barométrico BMP180 en Pa",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Lee la temperatura del sensor barométrico BMP180 en grados centígrados",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estima la altitud. Si se proporciona la presión barométrica a nivel del mar, la estimación es más precisa. De lo contrario, se asume una presión barométrica de 101325 Pa."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estima la altitud. Si se proporciona la presión barométrica a nivel del mar, la estimación es más precisa. De lo contrario, se asume una presión barométrica de 101325 Pa.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Lee la humedad de la tierra de un sensor analógico  (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Lee la cantidad de luz de una resistencia variable dependiendo de la luz (0-1023)."
 			}
 		}
 	}

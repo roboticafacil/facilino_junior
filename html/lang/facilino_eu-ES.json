@@ -51,6 +51,9 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "Egiazkoa",
 				"LANG_LOGIC_BOOLEAN_FALSE": "faltsua",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Egiazkoa edo faltsua bueltatzen du aukeratutakoaren arabera.",
+				"LANG_LOGIC_STATE_HIGH": "goi",
+				"LANG_LOGIC_STATE_LOW": "baxua",
+				"LANG_LOGIC_STATE_TOOLTIP": "Goi edo behe itzuliko hautatutakoaren arabera",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Bi sarrerak berdinak diren alderatzen du.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Bi sarrera elkaren artean desberdinak diren alderatzen du.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Lehenengo sarrera bigarrena baino txikiagoa den alderatzen du.",
@@ -145,7 +148,9 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Gas sentsore baten irteera digitala irakurtzea",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Presio barometrikoa irakurtzen du  BMP180 Pa sentsoretik",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Irakurri tenperatura sentsore BMP180 barometric gradu in",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Aurreikusitako altitudean. itsas mailaren  presio barometrikoa ematen bada, estimazioa zehatzagoa da. Bestela, 101325 Pa presio barometrikoa suposatzen da."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Aurreikusitako altitudean. itsas mailaren  presio barometrikoa ematen bada, estimazioa zehatzagoa da. Bestela, 101325 Pa presio barometrikoa suposatzen da.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Umearen analogia (0-1023)".
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Argia pizten duen argiaren araberakoa den dependentzia baten (0-1023) argia irakurtzen du."
 			}
 		}
 	}

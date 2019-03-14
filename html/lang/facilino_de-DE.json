@@ -145,7 +145,9 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Liest den digitalen Ausgang eines Gassensors.",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Liest barometrischen Druck von BMP180 Sensor in Pascal",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Liest die Temperatur eines BMP180 barometrischen Sensor in Grad Celsius",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Die Schätzungen der Höhe. Wenn der der Meeresspiegel Druck spezifiziert ist, ist die Schätzung ist genauer. Andernfalls wird ein Druck von 101325 Pa auf Meereshöhe angenommen."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Die Schätzungen der Höhe. Wenn der der Meeresspiegel Druck spezifiziert ist, ist die Schätzung ist genauer. Andernfalls wird ein Druck von 101325 Pa auf Meereshöhe angenommen.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Liest die Feuchtigkeit eines analogen Bodensensors (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Liest Licht von einem analogen lichtabhängigen Widerstand (0-1023)."
 			}
 		}
 	}
