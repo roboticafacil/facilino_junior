@@ -51,6 +51,9 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "vrai",
 				"LANG_LOGIC_BOOLEAN_FALSE": "faux",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Renvoie la valeur vrai ou faux.",
+				"LANG_LOGIC_STATE_HIGH": "élevé",
+				"LANG_LOGIC_STATE_LOW": "faible",
+				"LANG_LOGIC_STATE_TOOLTIP": "Retourne haut ou bas en fonction de la sélection",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Vérifie si les deux données sont égales.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Vérifie si les deux données sont différentes.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Vérifie si la première donnée est inférieure à la seconde.",
@@ -145,7 +148,9 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Lit la sortie numérique d'un capteur de gaz.",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Lit la pression barométrique à partir du capteur BMP180 en Pascal",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Lit la valeur du capteur barométrique BMP180 en degrés Celsius",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimation d'altitude. Si la pression athmosphérique au niveau de la mer est fournie, l'estimation est plus précise. Dans le cas contraire, une pression de 101325 Pa au niveau de la mer est utilisée."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimation d'altitude. Si la pression athmosphérique au niveau de la mer est fournie, l'estimation est plus précise. Dans le cas contraire, une pression de 101325 Pa au niveau de la mer est utilisée.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Lit l'humidité d'un capteur de sol analogique (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Lit la lumière d'une résistance de lumière analogique (0-1023)."
 			}
 		}
 	}

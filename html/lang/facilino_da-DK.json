@@ -145,7 +145,9 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Reads the digital output of a gas sensor",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Læser barometrisk tryk fra BMP180 sensor i Pascal",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Læser temperaturen fra BMP180 barometrisk sensor i Celsius.",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimerer højde. Hvis trykket ved havoverfladen er givet, er estimationen mere præcis. Ellers antages trykket ved havoverfladen at være 101325 Pa."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimerer højde. Hvis trykket ved havoverfladen er givet, er estimationen mere præcis. Ellers antages trykket ved havoverfladen at være 101325 Pa.",	
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Læs luftfugtighed fra en analog jordføler (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Læser lys fra en analog lysafvisningsmodstand (0-1023)."
 			}
 		}
 	}

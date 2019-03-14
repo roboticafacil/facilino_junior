@@ -52,6 +52,9 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "EKTE",
 				"LANG_LOGIC_BOOLEAN_FALSE": "FALSK",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Returnerer enten sant eller usant.",
+				"LANG_LOGIC_STATE_HIGH": "høy",
+				"LANG_LOGIC_STATE_LOW": "lav",
+				"LANG_LOGIC_STATE_TOOLTIP": "Returnerer høy eller lav avhengig av valgt",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Kontroller hvis begge innganger er like.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Sjekker om begge inngangene er forskjellige.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Kontrollerer om den første inngangen er mindre enn den andre.",
@@ -146,7 +149,10 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Reads the digital output of a gas sensor",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Leser barometrisk trykk fra BMP180 sensor i Pa",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Leser temperaturen fra BMP180 barometrisk sensor i Celsius grader",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimater høyde. Hvis sealevel trykket er gitt estimering er mer nøyaktig. Ellers, et trykk på 101 325 Pa ved havoverflaten er det antatt."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimater høyde. Hvis sealevel trykket er gitt estimering er mer nøyaktig. Ellers, et trykk på 101 325 Pa ved havoverflaten er det antatt.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Leser fuktighet fra en analog jordsensor (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Leser lys fra en analog lysavvisningsmotstand (0-1023)."
+			
 			}
 		}
 	}
