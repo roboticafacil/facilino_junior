@@ -51,6 +51,9 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "WAHR",
 				"LANG_LOGIC_BOOLEAN_FALSE": "FALSCH",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Gibt entweder wahr oder falsch.",
+				"LANG_LOGIC_STATE_HIGH": "hoch",
+				"LANG_LOGIC_STATE_LOW": "niedrig",
+				"LANG_LOGIC_STATE_TOOLTIP": "Liefert je nach Auswahl" high "oder" low ".
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Prüft, wenn beide Eingänge gleich sind.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Überprüft, ob beide Eingänge unterschiedlich sind.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Überprüft, ob der erste Eingang kleiner ist als der zweite ist.",
