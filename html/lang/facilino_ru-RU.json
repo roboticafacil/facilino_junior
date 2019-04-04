@@ -1,6 +1,6 @@
 {
 	"langs": {
-		"ru-RU1": {
+		"ru-RU": {
 			"keys": {
 				"LANG_CATEGORY_PROCEDURES": "Функции",
 				"LANG_CATEGORY_CONTROLS": "Контроль",
@@ -151,7 +151,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Считывание температуры от датчика барометрического BMP180 в градусах Цельсия",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Оценки высоты. Если при условии, что давление уровня моря оценка является более точной. В противном случае, давление 101325 Па при уровне моря предполагается.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Считывает влажность с аналогового датчика почвы (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Считывает свет с аналогового резистора светозависимости (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Считывает свет с аналогового резистора светозависимости (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Написать строку символов на экране OLED размером 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Маленький",
+				"LANG_OLED_SIZE_MEDIUM": "Средний",
+				"LANG_OLED_SIZE_BIG": "Отлично",
+				"LANG_OLED_POSITION_UP": "Вверх",
+				"LANG_OLED_POSITION_MIDDLE": "Средний",
+				"LANG_OLED_POSITION_DOWN": "Вниз",
+				"LANG_OLED_CLEAR_TOOLTIP": "Удаляет содержимое экрана OLED"
 			}
 		}
 	}

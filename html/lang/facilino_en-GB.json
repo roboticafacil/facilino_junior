@@ -149,7 +149,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Reads temperature with BMP180 sensor in Celsius degrees.",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimates altitude. Estimated sea-level preassure is 101325 Pa.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Reads humidity from an analog soil sensor (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Reads light from an analog light-depender resistor (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Reads light from an analog light-depender resistor (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Write a string of characters on an OLED screen of 0.96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Small",
+				"LANG_OLED_SIZE_MEDIUM": "Medium",
+				"LANG_OLED_SIZE_BIG": "Great",
+				"LANG_OLED_POSITION_UP": "Up",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "Down",
+				"LANG_OLED_CLEAR_TOOLTIP": "Deletes the contents of the OLED screen"
 			}
 		}
 	}

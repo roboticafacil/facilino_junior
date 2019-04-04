@@ -150,7 +150,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Reads the temperature from BMP180 barometric sensor in Celsius degrees",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimates altitude. If the sea-level pressure is provided the estimation is more accurate. Otherwise, a pressure of 101325 Pa at sealevel it is assumed.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Leest vochtigheid van een analoge bodemsensor (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Leest licht van een analoge lichtafhankelijke weerstand (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Leest licht van een analoge lichtafhankelijke weerstand (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Schrijf een reeks tekens op een OLED-scherm van 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Klein",
+				"LANG_OLED_SIZE_MEDIUM": "Gemiddeld",
+				"LANG_OLED_SIZE_BIG": "Geweldig",
+				"LANG_OLED_POSITION_UP": "Omhoog",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "Omlaag",
+				"LANG_OLED_CLEAR_TOOLTIP": "Wist de inhoud van het OLED-scherm"
 			}
 		}
 	}

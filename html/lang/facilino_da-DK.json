@@ -150,7 +150,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Læser temperaturen fra BMP180 barometrisk sensor i Celsius.",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimerer højde. Hvis trykket ved havoverfladen er givet, er estimationen mere præcis. Ellers antages trykket ved havoverfladen at være 101325 Pa.",	
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Læs luftfugtighed fra en analog jordføler (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Læser lys fra en analog lysafvisningsmodstand (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Læser lys fra en analog lysafvisningsmodstand (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Skriv en streng tegn på en OLED-skærm på 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Small",
+				"LANG_OLED_SIZE_MEDIUM": "Medium",
+				"LANG_OLED_SIZE_BIG": "Great",
+				"LANG_OLED_POSITION_UP": "Up",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "Down",
+				"LANG_OLED_CLEAR_TOOLTIP": "Sletter indholdet på OLED-skærmen"
 			}
 		}
 	}

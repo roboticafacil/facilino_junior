@@ -947,17 +947,7 @@
             }
             return __p
         };
-		
-	this["JST"]["dht_definitions_include"] = function(obj) {
-            obj || (obj = {});
-            var __t, __p = '',
-                __e = _.escape;
-            with(obj) {
-                __p += '#include <DHT.h>';			
-            }
-            return __p
-        };
-		
+				
 		this["JST"]["dht_definitions_variables"] = function(obj) {
             obj || (obj = {});
             var __t, __p = '',
@@ -3647,6 +3637,32 @@
             }
         };
 
+		Blockly.Arduino.relay_write_write = function() {
+            var dropdown_pin = this.getFieldValue('PIN');
+            var dropdown_stat = Blockly.Arduino.valueToCode(this, 'STAT', Blockly.Arduino.ORDER_ATOMIC);
+            var code = '';
+            Blockly.Arduino.setups_['setup_digital_write_' + dropdown_pin] = JST['inout_digital_write_setups']({'dropdown_pin': dropdown_pin});
+            code += JST['inout_digital_write']({'dropdown_pin': dropdown_pin,'dropdown_stat': dropdown_stat});
+            return code;
+        };
+
+        Blockly.Blocks.relay_write = {
+            category: Facilino.locales.getKey('LANG_CATEGORY_ADVANCED'),
+            category_colour: Facilino.LANG_COLOUR_ADVANCED,
+			colour: Facilino.LANG_COLOUR_ADVANCED,
+			keys: ['LANG_RELAY_WRITE_TOOLTIP'],
+            init: function() {
+                this.setColour(Facilino.LANG_COLOUR_ADVANCED);
+                this.appendDummyInput('').appendField(new Blockly.FieldImage('img/blocks/relay.svg',30*options.zoom,30*options.zoom)).appendField(new Blockly.FieldImage("img/blocks/digital_signal.svg",20*options.zoom, 20*options.zoom)).appendField(new Blockly.FieldDropdown(profiles.default.digital),'PIN');
+                this.appendValueInput('STAT').appendField(new Blockly.FieldImage('img/blocks/binary.svg',20*options.zoom,20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT);
+                this.setPreviousStatement(true,'code');
+                this.setInputsInline(true);
+                this.setNextStatement(true,'code');
+                this.setTooltip(Facilino.locales.getKey('LANG_RELAY_WRITE_TOOLTIP'));
+            }
+        };
+		
+		
         Blockly.Arduino.serial_readstring = function() {
 
             Blockly.Arduino.setups_['setup_serial'] = JST['serial_setups']({
@@ -5003,12 +5019,14 @@
 					category: Facilino.locales.getKey('LANG_CATEGORY_SCREEN'),
 					category_colour: Facilino.LANG_COLOUR_SCREEN,
 					colour: Facilino.LANG_COLOUR_SCREEN,
-					keys: ['LANG_OLED_DISPLAY_TOOLTIP'],
+					keys: ['LANG_OLED_DISPLAY_TOOLTIP','LANG_OLED_SIZE_SMALL','LANG_OLED_SIZE_MEDIUM','LANG_OLED_SIZE_BIG','LANG_OLED_POSITION_UP','LANG_OLED_POSITION_MIDDLE','LANG_OLED_POSITION_DOWN'],
 					init: function() {
 						this.setColour(Facilino.LANG_COLOUR_SCREEN);
-						var size = [['small','1'],['medium', '2'],['big','3']];
-						var altura = [['arriba','1'],['medio', '10'],['abajo','20']];
-						this.appendValueInput('CONTENT1',String).appendField(new Blockly.FieldImage('img/blocks/oled_display.svg',36*options.zoom, 20*options.zoom)).appendField(new Blockly.FieldImage('img/blocks/text.svg',20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldDropdown(size),'SIZE').appendField(new Blockly.FieldDropdown(altura),'ALTURA').setAlign(Blockly.ALIGN_RIGHT);
+						var size = [[Facilino.locales.getKey('LANG_OLED_SIZE_SMALL'),'1'],[Facilino.locales.getKey('LANG_OLED_SIZE_MEDIUM'), '2'],[Facilino.locales.getKey('LANG_OLED_SIZE_BIG'),'3']];
+						var altura = [[Facilino.locales.getKey('LANG_OLED_POSITION_UP'),'1'],[Facilino.locales.getKey('LANG_OLED_POSITION_MIDDLE'), '10'],[Facilino.locales.getKey('LANG_OLED_POSITION_DOWN'),'20']];
+						this.appendValueInput('CONTENT1',String).appendField(new Blockly.FieldImage('img/blocks/oled_display.svg',36*options.zoom, 20*options.zoom)).appendField(new Blockly.FieldImage('img/blocks/text.svg',20*options.zoom,20*options.zoom))
+							.appendField(new Blockly.FieldDropdown(size),'SIZE')
+							.appendField(new Blockly.FieldDropdown(altura),'ALTURA').setAlign(Blockly.ALIGN_RIGHT);
 						this.appendValueInput('CONTENT2', String);
 						this.appendDummyInput('Size');
 						this.setInputsInline(true);
