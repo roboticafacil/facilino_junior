@@ -48,11 +48,12 @@
 				"LANG_CONTROLS_IF_ELSEIF_Field_ELSEIF": "else if",
 				"LANG_CONTROLS_IF_ELSE_Field_ELSE": "else",
 				"LANG_CONTROLS_BASE_DELAY_TOOLTIP": "Waits the specified time in milliseconds (ms)",
-				"LANG_LOGIC_STATE_HIGH": "High",
-				"LANG_LOGIC_STATE_LOW": "Low",
 				"LANG_LOGIC_BOOLEAN_TRUE": "true",
 				"LANG_LOGIC_BOOLEAN_FALSE": "false",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Returns either true or false.",
+				"LANG_LOGIC_STATE_HIGH": "High",
+				"LANG_LOGIC_STATE_LOW": "Low",
+				"LANG_LOGIC_STATE_TOOLTIP": "Returns either high or low.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Checks if both inputs are equal.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Checks if both inputs are different.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Checks if the first input is smaller than the second one.",
@@ -148,7 +149,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Reads temperature with BMP180 sensor in Celsius degrees.",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimates altitude. Estimated sea-level preassure is 101325 Pa.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Reads humidity from an analog soil sensor (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Reads light from an analog light-depender resistor (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Reads light from an analog light-depender resistor (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Write a string of characters on an OLED screen of 0.96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Small",
+				"LANG_OLED_SIZE_MEDIUM": "Medium",
+				"LANG_OLED_SIZE_BIG": "Great",
+				"LANG_OLED_POSITION_UP": "Up",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "Down",
+				"LANG_OLED_CLEAR_TOOLTIP": "Deletes the contents of the OLED screen"
 			}
 		}
 	}

@@ -150,7 +150,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Lê a temperatura do sensor de BMP180 barométrica em graus Celsius",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estimativas altitude. Se a pressão do nível do mar é fornecido a estimativa é mais precisa. Caso contrário, a uma pressão de 101.325 Pa à do nível do mar é assumida.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Lê a umidade de um sensor de solo analógico (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Lê luz de um resistor de luz analógica dependente (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Lê luz de um resistor de luz analógica dependente (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Escreva uma cadeia de caracteres em uma tela OLED de 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Pequeno",
+				"LANG_OLED_SIZE_MEDIUM": "Medium",
+				"LANG_OLED_SIZE_BIG": "Ótimo",
+				"LANG_OLED_POSITION_UP": "Up",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "Down",
+				"LANG_OLED_CLEAR_TOOLTIP": "Exclui o conteúdo da tela OLED"
 			
 			}
 		}

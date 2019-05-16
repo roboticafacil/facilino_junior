@@ -156,6 +156,14 @@
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Stima l'altitudine. Se viene fornita la pressione atmosferica, la stima è più precisa. In caso contrario, viene assunta una pressione di 101325 Pa.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Legge l'umidità da un sensore del suolo analogico (0-1023).",
 				"LANG_LIGHT_SENSOR_TOOLTIP": "Legge la luce da una resistenza analogica del depuratore di luce (0-1023)."
+				"LANG_OLED_DISPLAY_TOOLTIP": "Scrivi una stringa di caratteri su uno schermo OLED di 0.96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Piccolo",
+				"LANG_OLED_SIZE_MEDIUM": "Medio",
+				"LANG_OLED_SIZE_BIG": "Ottimo",
+				"LANG_OLED_POSITION_UP": "Su",
+				"LANG_OLED_POSITION_MIDDLE": "Medio",
+				"LANG_OLED_POSITION_DOWN": "Giù",
+				"LANG_OLED_CLEAR_TOOLTIP": "Elimina il contenuto della schermata OLED"
 			}
 		}
 	}

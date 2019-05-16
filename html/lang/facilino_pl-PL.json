@@ -150,7 +150,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Odczytuje temperaturę od BMP180 czujnika atmosferycznego w stopniach Celsjusza",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Szacunki wysokości. Jeżeli ciśnienie Sealevel jest ocena jest bardziej dokładna. W przeciwnym razie, przy ciśnieniu 101325 Pa sealevel zakłada.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Odczytuje wilgotność z analogowego czujnika zabrudzenia (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Odczytuje światło z analogowego rezystora odbłyśnika światła (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Odczytuje światło z analogowego rezystora odbłyśnika światła (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Napisz ciąg znaków na ekranie OLED 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Mały",
+				"LANG_OLED_SIZE_MEDIUM": "Medium",
+				"LANG_OLED_SIZE_BIG": "Świetnie",
+				"LANG_OLED_POSITION_UP": "W górę",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "W dół",
+				"LANG_OLED_CLEAR_TOOLTIP": "Usuwa zawartość ekranu OLED"
 			}
 		}
 	}

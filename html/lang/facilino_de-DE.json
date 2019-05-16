@@ -51,6 +51,9 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "WAHR",
 				"LANG_LOGIC_BOOLEAN_FALSE": "FALSCH",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Gibt entweder wahr oder falsch.",
+				"LANG_LOGIC_STATE_HIGH": "hoch",
+				"LANG_LOGIC_STATE_LOW": "niedrig",
+				"LANG_LOGIC_STATE_TOOLTIP": "Liefert je nach Auswahl high oder low ",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Prüft, wenn beide Eingänge gleich sind.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Überprüft, ob beide Eingänge unterschiedlich sind.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Überprüft, ob der erste Eingang kleiner ist als der zweite ist.",
@@ -147,7 +150,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Liest die Temperatur eines BMP180 barometrischen Sensor in Grad Celsius",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Die Schätzungen der Höhe. Wenn der der Meeresspiegel Druck spezifiziert ist, ist die Schätzung ist genauer. Andernfalls wird ein Druck von 101325 Pa auf Meereshöhe angenommen.",
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Liest die Feuchtigkeit eines analogen Bodensensors (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Liest Licht von einem analogen lichtabhängigen Widerstand (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Liest Licht von einem analogen lichtabhängigen Widerstand (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Schreiben Sie eine Zeichenfolge auf einen OLED-Bildschirm von 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Klein",
+				"LANG_OLED_SIZE_MEDIUM": "Medium",
+				"LANG_OLED_SIZE_BIG": "Großartig",
+				"LANG_OLED_POSITION_UP": "Up",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "Down",
+				"LANG_OLED_CLEAR_TOOLTIP": "Löscht den Inhalt des OLED-Bildschirms"
 			}
 		}
 	}

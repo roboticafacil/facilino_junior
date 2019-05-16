@@ -149,7 +149,15 @@
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Llig la temperatura del sensor baromètric BMP180 en graus Celsius",
 				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estima l'altitut. Si es proporciona la presió baromètrica a nivell del mar, la estimación és més precisa. Si no, s'assumexi una presió baromètrica de 101325 Pa.",			
 				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Llegeix la humitat des d'un sensor de sòl analògic (0-1023).",
-				"LANG_LIGHT_SENSOR_TOOLTIP": "Llegeix la llum d'una resistència analògica de dependència de la llum (0-1023)."
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Llegeix la llum d'una resistència analògica de dependència de la llum (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Escriu una cadena de caràcters en una pantalla OLED de 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Petit",
+				"LANG_OLED_SIZE_MEDIUM": "Mitjà",
+				"LANG_OLED_SIZE_BIG": "Gran",
+				"LANG_OLED_POSITION_UP": "A dalt",
+				"LANG_OLED_POSITION_MIDDLE": "Medi",
+				"LANG_OLED_POSITION_DOWN": "A baix",
+				"LANG_OLED_CLEAR_TOOLTIP": "Esborra el contingut de la pantalla OLED"
 			}
 		}
 	}
