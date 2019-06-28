@@ -1,0 +1,1 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_setupLoop" id="[+spGWLQ?i$`7V~A6M^-" x="20" y="5"><statement name="LOOP"><block type="serial_println" id="7g3Q_0[CV!BG5m+^XYm["><value name="CONTENT"><block type="text" id="IBc_j02/Kxm5$MP,,YYI"><field name="TEXT">Hello world!</field></block></value></block></statement></block></xml>
