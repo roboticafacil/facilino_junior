@@ -1488,11 +1488,12 @@
 	
 		Blockly.Blocks['procedures_mutatorarg'] = {
 			colour: Facilino.LANG_COLOUR_PROCEDURES,
-			keys: ['LANG_VARIABLES_TYPE_NUMBER','LANG_VARIABLES_TYPE_STRING'],
+			keys: ['LANG_VARIABLES_TYPE_NUMBER','LANG_VARIABLES_TYPE_BOOLEAN','LANG_VARIABLES_TYPE_STRING'],
   init: function() {
     var field = new Blockly.FieldTextInput('x', this.validator_);
     this.appendDummyInput()
         .appendField(new Blockly.FieldImage('img/blocks/box_in.svg',20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldDropdown([
+					[Facilino.locales.getKey('LANG_VARIABLES_TYPE_INTEGER'), 'int'],
                     [Facilino.locales.getKey('LANG_VARIABLES_TYPE_NUMBER'), 'float'],
 					[Facilino.locales.getKey('LANG_VARIABLES_TYPE_BOOLEAN'), 'bool'],
 					[Facilino.locales.getKey('LANG_VARIABLES_TYPE_STRING'), 'String']
@@ -1584,12 +1585,13 @@
         examples: ['procedures_callreturn_example.bly'],
 		category_colour: Facilino.LANG_COLOUR_PROCEDURES,
 		colour: Facilino.LANG_COLOUR_PROCEDURES,
-		keys: ['LANG_PROCEDURES_DEFRETURN_PROCEDURE','LANG_VARIABLES_TYPE_NUMBER','LANG_VARIABLES_TYPE_STRING','LANG_PROCEDURES_DEFRETURN_TOOLTIP'],
+		keys: ['LANG_PROCEDURES_DEFRETURN_PROCEDURE','LANG_VARIABLES_TYPE_NUMBER','LANG_VARIABLES_TYPE_BOOLEAN','LANG_VARIABLES_TYPE_STRING','LANG_PROCEDURES_DEFRETURN_TOOLTIP'],
 		init: function() {
 			var nameField = new Blockly.FieldTextInput('',Blockly.Procedures.rename);
 			nameField.setSpellcheck(false);
 			this.appendDummyInput().appendField(new Blockly.FieldImage("img/blocks/function.svg",20*options.zoom, 20*options.zoom)).appendField(Facilino.locales.getKey('LANG_PROCEDURES_DEFRETURN_PROCEDURE')).appendField(nameField, 'NAME').appendField('', 'PARAMS');
 			this.appendValueInput('RETURN').setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldDropdown([
+					[Facilino.locales.getKey('LANG_VARIABLES_TYPE_INTEGER'), 'int'],
                     [Facilino.locales.getKey('LANG_VARIABLES_TYPE_NUMBER'), 'float'],
 					[Facilino.locales.getKey('LANG_VARIABLES_TYPE_BOOLEAN'), 'bool'],
 					[Facilino.locales.getKey('LANG_VARIABLES_TYPE_STRING'), 'String']
@@ -2491,6 +2493,39 @@
                 this.setTooltip(Facilino.locales.getKey('LANG_CONTROLS_BASE_DELAY_TOOLTIP'));
             }
         };
+		
+		Blockly.Arduino.dyor_controls_wait = function() {
+            var value1 = Blockly.Arduino.valueToCode(this, 'VALUE1', Blockly.Arduino.ORDER_ATOMIC);
+            var value2 = Blockly.Arduino.valueToCode(this, 'VALUE2', Blockly.Arduino.ORDER_ATOMIC);
+        var cond = this.getFieldValue('COND');
+            var code = 'while(!(('+value1+')'+cond+'('+value2+')));\n  delay(1);\n';
+            return code;
+        };
+
+		Blockly.Blocks.dyor_controls_wait = {
+            category: Facilino.locales.getKey('LANG_CATEGORY_CONTROLS'),
+			category_colour: Facilino.LANG_COLOUR_CONTROL,
+			colour: Facilino.LANG_COLOUR_CONTROL,
+			keys: ['LANG_CONTROLS_WAIT','LANG_CONTROLS_VALUE1','LANG_CONTROLS_VALUE2','LANG_CONTROLS_WAIT_TOOLTIP'],
+            init: function() {
+                this.setColour(Facilino.LANG_COLOUR_CONTROL);
+        this.appendDummyInput('').appendField(new Blockly.FieldImage("img/blocks/wait.svg",20*options.zoom, 20*options.zoom));
+        this.appendValueInput('VALUE1').setAlign(Blockly.ALIGN_RIGHT);
+        this.appendDummyInput('').appendField(new Blockly.FieldDropdown([
+                    ['=', '=='],
+					['!=', '!='],
+					['<', '<'],
+					['<=', '<='],
+					['>', '>'],
+					['>=', '>=']
+                ]), 'COND').setAlign(Blockly.ALIGN_RIGHT);
+        this.appendValueInput('VALUE2').setAlign(Blockly.ALIGN_RIGHT);
+        this.setInputsInline(true);
+                this.setPreviousStatement(true,'code');
+                this.setNextStatement(true,'code');
+                this.setTooltip(Facilino.locales.getKey('LANG_CONTROLS_WAIT_TOOLTIP'));
+            }
+        };
 
         Blockly.Arduino.logic_boolean = function() {
             var code = (this.getFieldValue('BOOL') === 'TRUE') ? 'true' : 'false';
@@ -2663,7 +2698,7 @@
 			init: function() {
                 this.setColour(Facilino.LANG_COLOUR_LOGIC);
                 this.setOutput(true, Boolean);
-                this.appendValueInput('A').appendField(new Blockly.FieldImage('img/blocks/comparison.svg',48*options.zoom,20*options.zoom));
+                this.appendValueInput('A').appendField(new Blockly.FieldImage('img/blocks/binary.svg',20*options.zoom,20*options.zoom));
                 this.appendValueInput('B').appendField(new Blockly.FieldDropdown(this.OPERATORS), 'OP');
                 this.setInputsInline(true);
                 // Assign 'this' to a variable for use in the tooltip closure below.
@@ -2718,7 +2753,7 @@
 			init: function() {
                 this.setColour(Facilino.LANG_COLOUR_LOGIC);
                 this.setOutput(true, Boolean);
-                this.appendValueInput('A').appendField(new Blockly.FieldImage('img/blocks/and.svg',20*options.zoom,20*options.zoom)).setCheck(Boolean);
+                this.appendValueInput('A').appendField(new Blockly.FieldImage('img/blocks/binary.svg',20*options.zoom,20*options.zoom)).setCheck(Boolean);
                 this.appendValueInput('B').setCheck(Boolean).appendField(new Blockly.FieldDropdown([
                     [Facilino.locales.getKey('LANG_LOGIC_OPERATION_AND') || 'AND', 'AND'],
                     [Facilino.locales.getKey('LANG_LOGIC_OPERATION_OR') || 'OR', 'OR']
@@ -2953,7 +2988,7 @@
             category_colour: Facilino.LANG_COLOUR_MATH,
 			colour: Facilino.LANG_COLOUR_MATH,
 			keys: ['LANG_ADVANCED_MATH_RANDOM_TOOLTIP'],
-			output: 'number',
+			output: 'integer',
             init: function() {
                 this.setColour(this.colour);
                 this.appendValueInput('NUM', Number).appendField(new Blockly.FieldImage('img/blocks/dices.svg',20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldImage('img/blocks/opening_bracket.svg',12*options.zoom,20*options.zoom)).setCheck(Number).setAlign(Blockly.ALIGN_RIGHT);
@@ -2962,6 +2997,28 @@
                 this.setInputsInline(true);
                 this.setOutput(true,Number);
                 this.setTooltip(Facilino.locales.getKey('LANG_ADVANCED_MATH_RANDOM_TOOLTIP'));
+            }
+        };
+		
+		Blockly.Arduino.math_sinusoid = function() {
+            var freq= Blockly.Arduino.valueToCode(this, 'FREQ', Blockly.Arduino.ORDER_NONE);
+			var code='sin((6.28318530717959e-06)*((float)('+freq+')*(float)millis()))';
+            return [code, Blockly.Arduino.ORDER_ATOMIC];
+        };
+
+        Blockly.Blocks.math_sinusoid = {
+            category: Facilino.locales.getKey('LANG_CATEGORY_MATH'),
+			category_colour: Facilino.LANG_COLOUR_MATH,
+			colour: Facilino.LANG_COLOUR_MATH,
+			keys: ['LANG_ADVANCED_MATH_SINUSOID','LANG_ADVANCED_MATH_SINUSOID_AMPLITUDE','LANG_ADVANCED_MATH_SINUSOID_FREQ','LANG_ADVANCED_MATH_SINUSOID_PHASE','LANG_ADVANCED_MATH_SINUSOID_OFFSET','LANG_ADVANCED_MATH_SINUSOID_TIME','LANG_ADVANCED_MATH_SINUSOID_TOOLTIP'],
+			output: 'number',
+            init: function() {
+                this.setColour(this.colour);
+                this.appendDummyInput('').appendField(new Blockly.FieldImage('img/blocks/waves.svg',20*options.zoom,20*options.zoom)).setAlign(Blockly.Blocks.ALIGN_RIGHT);
+				this.appendValueInput('FREQ').appendField(new Blockly.FieldImage('img/blocks/clock.svg',20*options.zoom,20*options.zoom)).setAlign(Blockly.Blocks.ALIGN_RIGHT);
+                this.setInputsInline(true);
+                this.setOutput(true);
+                this.setTooltip(Facilino.locales.getKey('LANG_ADVANCED_MATH_SINUSOID_TOOLTIP'));
             }
         };
 		
@@ -2982,7 +3039,10 @@
             if (isFunction) {
                 for (i in Blockly.Arduino.definitions_) {
                     if (Blockly.Arduino.definitions_[i].search(varValue) >= 0) {
-                        if (Blockly.Arduino.definitions_[i].substring(0, 5) === 'float') {
+                        if (Blockly.Arduino.definitions_[i].substring(0, 3) === 'int') {
+                            varType = 'int';
+                        }
+						else if (Blockly.Arduino.definitions_[i].substring(0, 5) === 'float') {
                             varType = 'float';
                         }
 						else if (Blockly.Arduino.definitions_[i].substring(0, 4) === 'bool') {
@@ -3008,12 +3068,25 @@
 				Blockly.Arduino.definitions_['declare_var' + varName] = varType + ' ' + varName + ';\n';
                 Blockly.Arduino.setups_['define_var' + varName] = varName + '=' + varValue + ';\n';
             } else if (input.output==='number') {
-                varType = 'float';
+				if (input.type==='math_number')
+				{
+					if (input.getFieldValue('NUM').includes('.'))
+						varType = 'float';
+					else
+						varType = 'int';
+				}
+				else
+					varType = 'float';
                 Blockly.Arduino.definitions_['declare_var' + varName] = varType + ' ' + varName + ';\n';
                 Blockly.Arduino.setups_['define_var' + varName] = varName + '=' + varValue + ';\n';
             }
-			else if (input.output==='text')
+			else if (input.output==='integer')
 			{
+				varType = 'int';
+                Blockly.Arduino.definitions_['declare_var' + varName] = varType + ' ' + varName + ';\n';
+                Blockly.Arduino.setups_['define_var' + varName] = varName + '=' + varValue + ';\n';
+			}
+			else if (input.output==='text') {
 				varType = 'String';
                 Blockly.Arduino.definitions_['declare_var' + varName] = varType + ' ' + varName + ';\n';
                 Blockly.Arduino.setups_['define_var' + varName] = varName + '=' + varValue + ';\n';
@@ -3224,6 +3297,164 @@
                     for (var i in variables) {
 						if (variables[i]!=='iteration')
                           dropdown.push([variables[i], variables[i]]);
+                    }
+                } else {
+                    dropdown.push(['', '']);
+                }
+				if (dropdown.length<1)
+					dropdown.push(['', '']);
+                return dropdown;
+            },
+            onchange: function() {
+                if (!this.workspace) {
+                    return;
+                }
+				this.last_field_value=this.getFieldValue('VAR');
+                if (!this.last_variables){
+                    this.last_variables=Blockly.Variables.allVariables();
+                }
+                var variables=Blockly.Variables.allVariables();
+                for (var i in variables){
+                     if (Blockly.Variables.allVariables()[i]!==this.last_variables[i]){
+						 this.getInput('VALUE').removeField('VAR');
+						 this.new_field=new Blockly.FieldDropdown(this.getVariables());
+						 this.new_field.setValue(this.last_field_value);
+						 this.getInput('VALUE').insertFieldAt(1,this.new_field,'VAR');
+						 //this.getInput('VALUE').insertFieldAt(1,this.last_field,'VAR');
+                         this.last_variables=Blockly.Variables.allVariables();
+                     }
+                 }
+                try {
+                    if (!this.exists()) {
+                        this.setWarningText(Facilino.locales.getKey('LANG_VARIABLES_CALL_WITHOUT_DEFINITION'));
+                    } else {
+                        this.setWarningText(null);
+                    }
+                } catch (e) {}
+            },
+            renameVar: function(oldName, newName) {
+                if (Blockly.Names.equals(oldName, this.getFieldValue('VAR'))) {
+                    this.setTitleValue(newName, 'VAR');
+                }
+            },
+            exists: function() {
+                for (var i in Blockly.Variables.allVariables()) {
+                    if (Blockly.Variables.allVariables()[i] === this.getFieldValue('VAR')) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        };
+		
+		Blockly.Arduino.variables_plus_one = function() {
+            var varValue = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ASSIGNMENT) || '';
+            var varName = this.getFieldValue('VAR') || '';
+            var code = varName + '++;\n';
+            return code;
+        };
+        Blockly.Blocks.variables_plus_one = {
+            // Variable setter.
+            category: Facilino.locales.getKey('LANG_CATEGORY_VARIABLES'),
+            category_colour: Facilino.LANG_COLOUR_VARIABLES,
+			colour: Facilino.LANG_COLOUR_VARIABLES,		
+			keys: ['LANG_VARIABLES_PLUS_ONE_TOOLTIP','LANG_VARIABLES_CALL_WITHOUT_DEFINITION'],
+            init: function() {
+                this.setColour(Facilino.LANG_COLOUR_VARIABLES);
+                this.appendDummyInput('').appendField(new Blockly.FieldImage('img/blocks/box_in.svg',20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldDropdown(this.getVariables()),'VAR').appendField(new Blockly.FieldImage('img/blocks/plus_one.svg',20*options.zoom,20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT);
+                this.setInputsInline(false);
+                this.setPreviousStatement(true,'code');
+                this.setNextStatement(true,'code');
+                this.setTooltip(Facilino.locales.getKey('LANG_VARIABLES_PLUS_ONE_TOOLTIP'));
+            },
+            getVariables: function() {
+                var variables = Blockly.Variables.allVariables();
+				var dropdown = [];
+                if (variables.length > 0) {
+                    for (var i in variables) {
+						if (variables[i]!=='iteration')
+						{
+								dropdown.push([variables[i], variables[i]]);
+						}
+                    }
+                } else {
+                    dropdown.push(['', '']);
+                }
+				if (dropdown.length<1)
+					dropdown.push(['', '']);
+                return dropdown;
+            },
+            onchange: function() {
+                if (!this.workspace) {
+                    return;
+                }
+				this.last_field_value=this.getFieldValue('VAR');
+                if (!this.last_variables){
+                    this.last_variables=Blockly.Variables.allVariables();
+                }
+                var variables=Blockly.Variables.allVariables();
+                for (var i in variables){
+                     if (Blockly.Variables.allVariables()[i]!==this.last_variables[i]){
+						 this.getInput('VALUE').removeField('VAR');
+						 this.new_field=new Blockly.FieldDropdown(this.getVariables());
+						 this.new_field.setValue(this.last_field_value);
+						 this.getInput('VALUE').insertFieldAt(1,this.new_field,'VAR');
+						 //this.getInput('VALUE').insertFieldAt(1,this.last_field,'VAR');
+                         this.last_variables=Blockly.Variables.allVariables();
+                     }
+                 }
+                try {
+                    if (!this.exists()) {
+                        this.setWarningText(Facilino.locales.getKey('LANG_VARIABLES_CALL_WITHOUT_DEFINITION'));
+                    } else {
+                        this.setWarningText(null);
+                    }
+                } catch (e) {}
+            },
+            renameVar: function(oldName, newName) {
+                if (Blockly.Names.equals(oldName, this.getFieldValue('VAR'))) {
+                    this.setTitleValue(newName, 'VAR');
+                }
+            },
+            exists: function() {
+                for (var i in Blockly.Variables.allVariables()) {
+                    if (Blockly.Variables.allVariables()[i] === this.getFieldValue('VAR')) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        };
+		
+		Blockly.Arduino.variables_minus_one = function() {
+            var varValue = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ASSIGNMENT) || '';
+            var varName = this.getFieldValue('VAR') || '';
+            var code = varName + '--;\n';
+            return code;
+        };
+        Blockly.Blocks.variables_minus_one = {
+            // Variable setter.
+            category: Facilino.locales.getKey('LANG_CATEGORY_VARIABLES'),
+            category_colour: Facilino.LANG_COLOUR_VARIABLES,
+			colour: Facilino.LANG_COLOUR_VARIABLES,		
+			keys: ['LANG_VARIABLES_MINUS_ONE_TOOLTIP','LANG_VARIABLES_CALL_WITHOUT_DEFINITION'],
+            init: function() {
+                this.setColour(Facilino.LANG_COLOUR_VARIABLES);
+                this.appendDummyInput('').appendField(new Blockly.FieldImage('img/blocks/box_in.svg',20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldDropdown(this.getVariables()),'VAR').appendField(new Blockly.FieldImage('img/blocks/minus_one.svg',20*options.zoom,20*options.zoom)).setAlign(Blockly.ALIGN_RIGHT);
+                this.setInputsInline(false);
+                this.setPreviousStatement(true,'code');
+                this.setNextStatement(true,'code');
+                this.setTooltip(Facilino.locales.getKey('LANG_VARIABLES_MINUS_ONE_TOOLTIP'));
+            },
+            getVariables: function() {
+                var variables = Blockly.Variables.allVariables();
+				var dropdown = [];
+                if (variables.length > 0) {
+                    for (var i in variables) {
+						if (variables[i]!=='iteration')
+						{
+								dropdown.push([variables[i], variables[i]]);
+						}
                     }
                 } else {
                     dropdown.push(['', '']);
@@ -3787,7 +4018,7 @@
             }
         };
 
-		Blockly.Arduino.relay_write = function() {
+		/*Blockly.Arduino.relay_write = function() {
             var dropdown_pin = this.getFieldValue('PIN');
             var dropdown_stat = Blockly.Arduino.valueToCode(this, 'STAT', Blockly.Arduino.ORDER_ATOMIC);
             var code = '';
@@ -3869,7 +4100,7 @@
 					}
 				}
             
-        };
+        };*/
 		
 		
         Blockly.Arduino.serial_readstring = function() {
@@ -4453,6 +4684,180 @@
 					this.setTooltip(Facilino.locales.getKey('LANG_INFRARED_DIGITAL_TOOLTIP'));
 				}
 			};
+			
+			
+			Blockly.Arduino.zum_piezo_buzzerav = function() {
+			var dropdown_pin = this.getFieldValue('PIN');
+            var in1 = Blockly.Arduino.valueToCode(this, 'TONE', Blockly.Arduino.ORDER_ATOMIC);
+            var in2 = Blockly.Arduino.valueToCode(this, 'DURA', Blockly.Arduino.ORDER_ATOMIC);		
+            var code = '';
+			var pin='';
+			if (profiles['processor']==='ESP32')
+			{
+				var channel = 0;
+				for (var i=0;i<profiles.default.pwm_channel.length;i++)
+				{
+					if (profiles.default.pwm_channel[i][0]===dropdown_pin)
+					{
+						channel=profiles.default.pwm_channel[i][1];
+						break;
+					}
+				}
+				Blockly.Arduino.setups_['ledc_'+dropdown_pin] = 'ledcSetup('+channel+',0,8);\n  ledcAttachPin('+dropdown_pin+','+channel+');\n'				
+				if (this.getFieldValue('OPTION')!=='1')
+				{
+					Blockly.Arduino.definitions_['define_adv_buzzer_tone']='void _tone(int channel, float noteFrequency, long noteDuration, int silentDuration){\nledcWriteTone(channel, noteFrequency);\n  delay(noteDuration);\n  ledcWrite(channel, 0);\n  delay(silentDuration);\n}\n';
+				}
+				if (this.getFieldValue('OPTION')==='1')
+				{
+					Blockly.Arduino.definitions_['define_spacegun']='void spaceGun(int channel, int maximum)\n{\n  ledcSetup(channel,2000,8);\n  for (int i=0;i<maximum;i++){\n    ledcWrite(channel,255);\n    delayMicroseconds(i);\n    ledcWrite(channel,0);\n    delayMicroseconds(i);\n  }\n  ledcSetup(channel,0,8);\n}\n';
+				}
+				pin+=channel;
+			}
+			else
+			{
+				if (this.getFieldValue('OPTION')!=='1')
+				{
+					Blockly.Arduino.definitions_['define_adv_buzzer_tone']='void _tone(int buzzerPin, float noteFrequency, long noteDuration, int silentDuration){\n  tone(buzzerPin, noteFrequency, noteDuration);\n  delay(noteDuration);\n  delay(silentDuration);\n}\n';
+				}
+				else
+				{
+					Blockly.Arduino.definitions_['define_spacegun']='void spaceGun(int pin, int maximum)\n{\n  pinMode(pin,OUTPUT);\n  for (int i=0;i<maximum;i++){\n    digitalWrite(pin,HIGH);\n    delayMicroseconds(i);\n    digitalWrite(pin,LOW);\n    delayMicroseconds(i);\n  }\n  noTone(pin);\n}\n';
+				}
+				pin+=dropdown_pin;
+			}
+			/*
+			if (this.getFieldValue('OPTION')==='0')
+			{
+				code+='_tone('+pin+','+in1+','+in2+',0);\n';
+			}
+			else if (this.getFieldValue('OPTION')==='1')
+			{
+				code+='{\n  for (int nshot=0;nshot<'+in2+';nshot++){\n    spaceGun('+pin+',map(100-'+in1+',0,100,400,1000));\n    delay(50);\n  }\n}\n';
+			}
+			else if (this.getFieldValue('OPTION')==='2')
+			{
+				code+='{\n  int _maximum=map(100-'+in1+',0,100,50,300);\n  for (int nshot=0;nshot<'+in2+';nshot++){\n    _tone('+pin+',random(_maximum,10*_maximum),_maximum,1);\n    delay(50);\n}  \n}\n';
+			}
+			else if (this.getFieldValue('OPTION')==='3')
+			{
+				code+='{\n  for (int i='+in1+'; i<'+in2+'; i+=25){\n    _tone('+pin+',i,25,5);\n    }\n  }\n';
+			}
+			else if (this.getFieldValue('OPTION')==='4')
+			{
+				code+='{\n  for (int i='+in2+'; i>='+in1+'; i-=25){\n    _tone('+pin+',i,25,5);\n    }\n  }\n';
+			}
+			else if (this.getFieldValue('OPTION')==='5')
+			{
+				code+='{\n  for (int i='+in1+'; i<'+in2+'; i=i*1.02){\n    _tone('+pin+',i,25,5);\n    }\n  }\n';
+			}
+			else if (this.getFieldValue('OPTION')==='6')
+			{
+				code+='{\n  for (int i='+in2+'; i>='+in1+'; i=i/1.02){\n    _tone('+pin+',i,25,5);\n    }\n  }\n';
+			}
+			else if (this.getFieldValue('OPTION')==='7')
+			{
+				code+='{\n  for (int i='+in1+'; i<'+in2+'; i+=25){\n    _tone('+pin+',i,20,5);\n    }\n  for (int i='+in2+'; i>='+in1+'; i-=25){\n    _tone('+pin+',i,20,5);\n    }\n  }\n';
+			}
+			else if (this.getFieldValue('OPTION')==='8')
+			{
+				code+='{\n  for (int i='+in1+'; i<'+in2+'; i=i*1.02){\n    _tone('+pin+',i,20,5);\n    }\n  for (int i='+in2+'; i>='+in1+'; i=i/1.02){\n    _tone('+pin+',i,20,5);\n    }\n  }\n';
+			}
+			else if (this.getFieldValue('OPTION')==='9')
+			{
+				code+='{\n  long _fib['+in2+'];\n  long _fib1=1;\n  long _fib2=2;\n  for (int nshot=0;nshot<'+in2+';nshot++){\n    _fib[nshot]=_fib1+_fib2;\n    _fib1=_fib2;\n    _fib2=_fib[nshot];\n    _tone('+pin+',_fib[nshot],'+in1+',1);\n    delay(10);\n  }\n}\n';
+			}
+			else if (this.getFieldValue('OPTION')==='10')
+			{
+				code+='{\n  long _fib['+in2+'];\n  long _fib1=1;\n  long _fib2=2;\n  for (int nshot=0;nshot<'+in2+';nshot++){\n    _fib[nshot]=_fib1+_fib2;\n    _fib1=_fib2;\n    _fib2=_fib[nshot];\n}\n  for (int nshot=('+in2+'-1);nshot>=0;nshot--){\n    _tone('+pin+',_fib[nshot],'+in1+',1);\n    delay(10);\n}  \n}\n';
+			}
+			else if (this.getFieldValue('OPTION')==='11')
+			{
+				code+='_tone('+pin+',('+in1+')*pow(1.059463094359,('+in2+')),100,0);\n';
+			}*/
+            return code;
+        };
+
+        Blockly.Blocks.zum_piezo_buzzerav = {
+            category: Facilino.locales.getKey('LANG_CATEGORY_SOUND'),
+			category_colour: Facilino.LANG_COLOUR_SOUND,
+			colour: Facilino.LANG_COLOUR_SOUND,
+			keys: ['LANG_ZUM_PIEZO_BUZZERAV','LANG_ZUM_PIEZO_BUZZERAV_PIN','LANG_ZUM_PIEZO_BUZZERAV_TONE','LANG_ZUM_PIEZO_BUZZERAV_DURATION','LANG_ZUM_PIEZO_BUZZERAV_TOOLTIP','LANG_PIEZZO_BUZZER_PREDEF_TONE','LANG_PIEZZO_BUZZER_PREDEF_SPACEGUN','LANG_PIEZZO_BUZZER_PREDEF_RANDOM','LANG_PIEZZO_BUZZER_PREDEF_INCREASING','LANG_PIEZZO_BUZZER_PREDEF_DECREASING','LANG_PIEZZO_BUZZER_PREDEF_LINEAR','LANG_PIEZZO_BUZZER_PREDEF_EXP','LANG_PIEZZO_BUZZER_PREDEF_SIREN','LANG_PIEZZO_BUZZER_PREDEF_FIBONACCI','LANG_PIEZZO_BUZZER_PREDEF_DISTANCE','LANG_PIEZZO_BUZZER_PREDEF_SPEED','LANG_PIEZZO_BUZZER_PREDEF_SHOTS','LANG_PIEZZO_BUZZER_PREDEF_TONES','LANG_PIEZZO_BUZZER_PREDEF_INITIAL','LANG_PIEZZO_BUZZER_PREDEF_FINAL','LANG_PIEZZO_BUZZER_PREDEF_MAX'],
+            init: function() {
+                this.setColour(Facilino.LANG_COLOUR_SOUND);
+                this.appendValueInput('TONE', Number).appendField(new Blockly.FieldImage('img/blocks/speaker.svg',20*options.zoom,20*options.zoom))
+                    .appendField(new Blockly.FieldImage("img/blocks/digital_signal.svg",20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldDropdown(profiles.default.digital),'PIN').setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldImage('img/blocks/vibration.svg', 20*options.zoom, 20*options.zoom),'INP1');
+                this.appendValueInput('DURA', Number).setCheck(Number).setAlign(Blockly.ALIGN_RIGHT).appendField(new Blockly.FieldImage('img/blocks/wait.svg',20*options.zoom, 20*options.zoom),'INP2');
+
+                this.setPreviousStatement(true,'code');
+                this.setNextStatement(true,'code');
+				this.setInputsInline(true);
+                this.setTooltip(Facilino.locales.getKey('LANG_ZUM_PIEZO_BUZZERAV_TOOLTIP'));
+            }/*,
+			onchange: function()
+			{
+				if (this.getFieldValue('OPTION')==='0')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_ZUM_PIEZO_BUZZERAV_TONE'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_ZUM_PIEZO_BUZZERAV_DURATION'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='1')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_SPEED'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_SHOTS'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='2')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_SPEED'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_TONES'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='3')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_INITIAL'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_FINAL'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='4')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_INITIAL'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_FINAL'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='5')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_INITIAL'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_FINAL'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='6')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_INITIAL'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_FINAL'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='7')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_INITIAL'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_MAX'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='8')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_INITIAL'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_MAX'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='9')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_ZUM_PIEZO_BUZZERAV_DURATION'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_TONES'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='10')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_ZUM_PIEZO_BUZZERAV_DURATION'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_TONES'),'INP2');
+				}
+				else if (this.getFieldValue('OPTION')==='11')
+				{
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_INITIAL'),'INP1');
+					this.setFieldValue(Facilino.locales.getKey('LANG_PIEZZO_BUZZER_PREDEF_DISTANCE'),'INP2');
+				}
+			}*/
+        };
 		
 		Blockly.Arduino.piezo_buzzer_predef_sounds = function() {
 			var dropdown_pin = this.getFieldValue('PIN');
@@ -4481,7 +4886,7 @@
             category: Facilino.locales.getKey('LANG_CATEGORY_SOUND'),
             category_colour: Facilino.LANG_COLOUR_SOUND,
 			colour: Facilino.LANG_COLOUR_SOUND,
-			keys: ['LANG_PIEZO_BUZZER','LANG_PIEZO_BUZZER_PIN','LANG_PIEZZO_BUZZER_PREDEF_CONNECTION','LANG_PIEZZO_BUZZER_PREDEF_DISCONNECTION','LANG_PIEZZO_BUZZER_PREDEF_BUTTON_PUSHED','LANG_PIEZZO_BUZZER_PREDEF_MODE1','LANG_PIEZZO_BUZZER_PREDEF_MODE2','LANG_PIEZZO_BUZZER_PREDEF_MODE3','LANG_PIEZO_BUZZER_PREDEF_SOUNDS_TOOLTIP'],
+			keys: ['LANG_PIEZZO_BUZZER_PREDEF_CONNECTION','LANG_PIEZZO_BUZZER_PREDEF_DISCONNECTION','LANG_PIEZZO_BUZZER_PREDEF_BUTTON_PUSHED','LANG_PIEZZO_BUZZER_PREDEF_MODE1','LANG_PIEZZO_BUZZER_PREDEF_MODE2','LANG_PIEZZO_BUZZER_PREDEF_MODE3','LANG_PIEZO_BUZZER_PREDEF_SOUNDS_TOOLTIP'],
             init: function() {
                 this.setColour(Facilino.LANG_COLOUR_SOUND);
 				var opt = new Blockly.FieldDropdown([
@@ -4541,6 +4946,48 @@
 					Blockly.Arduino.play_melody='';
 			}
         };
+		
+		Blockly.Arduino.dyor_piezo_buzzer_notone = function() {
+			var dropdown_pin = this.getFieldValue('PIN');
+			var code = '';
+			
+			if (profiles['processor']==='ESP32')
+				{
+					var channel = 0;
+				for (var i=0;i<profiles.default.pwm_channel.length;i++)
+				{
+					if (profiles.default.pwm_channel[i][0]===dropdown_pin)
+					{
+						channel=profiles.default.pwm_channel[i][1];
+						break;
+					}
+				}
+				Blockly.Arduino.setups_['ledc_'+dropdown_pin] = 'ledcSetup('+channel+',0,8);\n  ledcAttachPin('+dropdown_pin+','+channel+');\n'				
+				code+='ledcWrite('+channel+',0);\n';
+			}
+			else
+			{
+				code+='noTone('+dropdown_pin+');\n';
+			}
+			return code;
+		};
+
+
+		Blockly.Blocks.dyor_piezo_buzzer_notone = {
+			category: Facilino.locales.getKey('LANG_CATEGORY_SOUND'),
+			category_colour: Facilino.LANG_COLOUR_SOUND,
+			colour: Facilino.LANG_COLOUR_SOUND,
+			keys: ['LANG_PIEZO_BUZZER_TOOLTIP'],
+			init: function() {
+				this.setColour(Facilino.LANG_COLOUR_SOUND);
+				this.appendDummyInput('')
+					.appendField(new Blockly.FieldImage('img/blocks/no_speaker.svg',20*options.zoom,20*options.zoom)).appendField(new Blockly.FieldDropdown(profiles.default.digital),'PIN');
+				this.setInputsInline(true);
+				this.setPreviousStatement(true,'code');
+				this.setNextStatement(true,'code');
+				this.setTooltip(Facilino.locales.getKey('LANG_PIEZO_BUZZER_NOTONE_TOOLTIP'));
+			}
+		};
 
 		function noteCreator(item,index){
 			var duration,note;
