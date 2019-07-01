@@ -81,6 +81,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Set timer to update list of available ports
     updateSerialPorts();
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateSerialPorts()));
+    timer->start(5000);
 
     ui->consoleText->document()->setMaximumBlockCount(100);
     //ui->messagesWidget->show();
@@ -332,7 +335,7 @@ void MainWindow::actionMonitor() {
         ui->mainToolBar->setVisible(true);
         ui->monitorToolBar->setVisible(false);
     } else {
-        serialPortOpen();
+        serialPortOpen(SettingsStore::index2baudrate[ui->boardBox->currentIndex()]);
         ui->consoleEdit->setFocus();
         ui->actionMonitor->setChecked(true);
         // Hide main toolbar, show monitor toolbar
@@ -705,7 +708,7 @@ void MainWindow::serialPortClose() {
     serial->disconnect(serial, SIGNAL(readyRead()), this, SLOT(readSerial()));
 }
 
-void MainWindow::serialPortOpen() {
+void MainWindow::serialPortOpen(qint32 baudrate) {
     // Open serial connection
     ui->webView->hide();
     ui->widgetConsole->show();
@@ -722,7 +725,7 @@ void MainWindow::serialPortOpen() {
 
     // Set default connection parameters
     serial->setPortName(ui->serialPortBox->currentText());
-    serial->setBaudRate(QSerialPort::Baud9600);
+    serial->setBaudRate(baudrate);
     serial->setDataBits(QSerialPort::Data8);
     serial->setParity(QSerialPort::NoParity);
     serial->setStopBits(QSerialPort::OneStop);
@@ -847,7 +850,7 @@ QStringList MainWindow::portList() {
         portName.insert(0, "/dev/");
 #endif
 #ifdef Q_OS_OSX
-        portName.insert(0, "/dev/tty.");
+        portName.insert(0, "/dev/");
 #endif
         serialPorts.append(portName);
     }

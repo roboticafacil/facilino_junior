@@ -7,10 +7,12 @@
 #include <QString>
 #include <QSettings>
 #include <QStandardPaths>
+#include <QtSerialPort>
 
 const QString SettingsStore::index2name[SIZE_LIST] = {"ArduinoUno","ArduinoNano","ArduinoNano","EasyPlug","WEMOS D1R32 SHIELD"};
 const QString SettingsStore::index2board[SIZE_LIST] = {"arduino:avr:uno","arduino:avr:nano:cpu=atmega328","arduino:avr:nano:cpu=atmega328old","arduino:avr:uno","esp32:esp32:lolin32"};
-const QString SettingsStore::version = "1.0.3";
+const qint32 SettingsStore::index2baudrate[SIZE_LIST] = {QSerialPort::Baud9600,QSerialPort::Baud9600,QSerialPort::Baud9600,QSerialPort::Baud9600,QSerialPort::Baud115200};
+const QString SettingsStore::version = "1.0.2";
 
 
 SettingsStore::SettingsStore(const QString &fileName) {

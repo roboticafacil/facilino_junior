@@ -69,7 +69,7 @@ private:
                              bool clear = true);
     void setArduinoBoard();
     void setXmlFileName(const QString &fileName);
-    void serialPortOpen();
+    void serialPortOpen(qint32 baudrate);
     void serialPortClose();
     QStringList portList();
     int saveXml(const QString &xmlFilePath);

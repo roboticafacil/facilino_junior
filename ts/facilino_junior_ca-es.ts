@@ -140,9 +140,9 @@
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="566"/>
-        <location filename="../src/mainwindow.cpp" line="204"/>
-        <location filename="../src/mainwindow.cpp" line="488"/>
-        <location filename="../src/mainwindow.cpp" line="492"/>
+        <location filename="../src/mainwindow.cpp" line="207"/>
+        <location filename="../src/mainwindow.cpp" line="491"/>
+        <location filename="../src/mainwindow.cpp" line="495"/>
         <source>Save</source>
         <translation>Desa</translation>
     </message>
@@ -373,78 +373,78 @@
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="194"/>
+        <location filename="../src/mainwindow.cpp" line="197"/>
         <source>Examples</source>
         <translation>Exemples</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="208"/>
+        <location filename="../src/mainwindow.cpp" line="211"/>
         <source>Export</source>
         <translation>Exportar</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="220"/>
-        <location filename="../src/mainwindow.cpp" line="507"/>
+        <location filename="../src/mainwindow.cpp" line="223"/>
+        <location filename="../src/mainwindow.cpp" line="510"/>
         <source>Couldn&apos;t open file to save content: %1.</source>
         <translation>No s&apos;ha pogut obrir el fitxer per a desar el contingut: %1.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="226"/>
+        <location filename="../src/mainwindow.cpp" line="229"/>
         <source>Done exporting: %1.</source>
         <translation>Exportació completada: %1.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="316"/>
+        <location filename="../src/mainwindow.cpp" line="319"/>
         <source>Include file</source>
         <translation>Incloure fitxer</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="402"/>
+        <location filename="../src/mainwindow.cpp" line="405"/>
         <source>Open file</source>
         <translation>Obrir fitxer</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="417"/>
+        <location filename="../src/mainwindow.cpp" line="420"/>
         <source>Blockly Files %1</source>
         <translation>Fitxers Blockly %1</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="437"/>
+        <location filename="../src/mainwindow.cpp" line="440"/>
         <source>Couldn&apos;t open file to read content: %1.</source>
         <translation>No s&apos;ha pogut obrir el fitxer per a llegir el contingut: %1.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="515"/>
+        <location filename="../src/mainwindow.cpp" line="518"/>
         <source>Done saving.</source>
         <translation>Desat.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="555"/>
+        <location filename="../src/mainwindow.cpp" line="558"/>
         <source>Changes successfully applied!</source>
         <translation>Canvis aplicats correctament!</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="644"/>
+        <location filename="../src/mainwindow.cpp" line="647"/>
         <source>Board changed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="644"/>
+        <location filename="../src/mainwindow.cpp" line="647"/>
         <source>Are you sure you want to change the board? All code will be lost!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="664"/>
+        <location filename="../src/mainwindow.cpp" line="667"/>
         <source>Finished.</source>
         <translation>Finalitzat.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="673"/>
+        <location filename="../src/mainwindow.cpp" line="676"/>
         <source>Building...</source>
         <translation>Compilant...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="958"/>
+        <location filename="../src/mainwindow.cpp" line="961"/>
         <source>There could be unsaved changes that could be lost. Do you want to save them before continuing?</source>
         <translation>Poden haver canvis sense desar que es perdrien. Vols desar-los abans de continuar?</translation>
     </message>

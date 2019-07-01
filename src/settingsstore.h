@@ -35,6 +35,7 @@ public:
 
     static const QString index2board[SIZE_LIST];
     static const QString index2name[SIZE_LIST];
+    static const qint32 index2baudrate[SIZE_LIST];
     static const QString version;
 
     void copyDefaultSettings(const QString &fileName = CONFIG_INI,
