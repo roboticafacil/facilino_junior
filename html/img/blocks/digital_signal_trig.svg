@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30mm"
+   height="30mm"
+   viewBox="0 0 30 30"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="digital_signal_trig.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="23.307852"
+     inkscape:cy="13.717065"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-267)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.93645502,286.30355 H 11.746433 v -17.89582 h 11.182739 l -0.251306,17.86946 5.469918,0.0264 v 0"
+       id="path4498"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <g
+       aria-label="TRIG"
+       transform="matrix(0.58523881,0,0,0.58192185,-2.8539935,235.99097)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.33333349px;line-height:1.25;font-family:OCRA;-inkscape-font-specification:'OCRA, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000080;fill-opacity:1;stroke:none"
+       id="flowRoot4483">
+      <path
+         d="M 11.05013,104.82352 V 92.136016 H 6.5188802 V 89.552683 H 18.654297 v 2.583333 h -4.520833 v 12.687504 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000080"
+         id="path4491"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 20.623047,104.82352 V 89.552683 h 6.489583 q 2.447917,0 3.552084,0.416667 1.114583,0.40625 1.78125,1.458333 0.666667,1.052083 0.666667,2.40625 0,1.71875 -1.010417,2.84375 -1.010417,1.114584 -3.020833,1.40625 1,0.583334 1.645833,1.28125 0.65625,0.697917 1.760417,2.479167 l 1.864583,2.97917 h -3.6875 l -2.229167,-3.32292 q -1.1875,-1.78125 -1.625,-2.239583 -0.4375,-0.46875 -0.927083,-0.635417 -0.489584,-0.177083 -1.552084,-0.177083 h -0.625 v 6.375003 z m 3.083333,-8.812503 h 2.28125 q 2.21875,0 2.770834,-0.1875 0.552083,-0.1875 0.864583,-0.645834 0.3125,-0.458333 0.3125,-1.145833 0,-0.770834 -0.416666,-1.239584 -0.40625,-0.479166 -1.156251,-0.604166 -0.375,-0.05208 -2.25,-0.05208 h -2.40625 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000080"
+         id="path4493"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 35.935548,104.82352 V 89.552683 h 3.083334 v 15.270837 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000080"
+         id="path4495"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 49.050133,99.208933 v -2.572916 h 6.645834 v 6.083333 q -0.96875,0.9375 -2.812501,1.65625 -1.833333,0.70833 -3.71875,0.70833 -2.395833,0 -4.177083,-1 -1.78125,-1.01041 -2.677084,-2.875 -0.895833,-1.874997 -0.895833,-4.072913 0,-2.385417 1,-4.239584 1,-1.854167 2.927084,-2.84375 1.46875,-0.760417 3.65625,-0.760417 2.84375,0 4.4375,1.197917 1.604167,1.1875 2.0625,3.291667 l -3.0625,0.572916 q -0.322917,-1.125 -1.21875,-1.770833 -0.885417,-0.65625 -2.21875,-0.65625 -2.020834,0 -3.21875,1.28125 -1.1875,1.28125 -1.1875,3.802084 0,2.71875 1.208333,4.083333 1.208333,1.35417 3.166667,1.35417 0.96875,0 1.9375,-0.375 0.979166,-0.38542 1.677083,-0.92709 v -1.937497 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000080"
+         id="path4497"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

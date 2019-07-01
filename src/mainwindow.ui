@@ -361,6 +361,11 @@ pressed: { border: 1px };</string>
           <string>EasyPlug</string>
          </property>
         </item>
+        <item>
+         <property name="text">
+          <string>Wemos D1 R32 (Uno Sensor Shield)</string>
+         </property>
+        </item>
        </widget>
       </item>
       <item>

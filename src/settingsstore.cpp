@@ -8,8 +8,9 @@
 #include <QSettings>
 #include <QStandardPaths>
 
-const QString SettingsStore::index2name[SIZE_LIST] = {"ArduinoUno","ArduinoNano","ArduinoNano","EasyPlug"};
-const QString SettingsStore::index2board[SIZE_LIST] = {"arduino:avr:uno","arduino:avr:nano:cpu=atmega328","arduino:avr:nano:cpu=atmega328old","arduino:avr:uno"};
+const QString SettingsStore::index2name[SIZE_LIST] = {"ArduinoUno","ArduinoNano","ArduinoNano","EasyPlug","WEMOS D1R32 SHIELD"};
+const QString SettingsStore::index2board[SIZE_LIST] = {"arduino:avr:uno","arduino:avr:nano:cpu=atmega328","arduino:avr:nano:cpu=atmega328old","arduino:avr:uno","esp32:esp32:lolin32"};
+const QString SettingsStore::version = "1.0.3";
 
 
 SettingsStore::SettingsStore(const QString &fileName) {

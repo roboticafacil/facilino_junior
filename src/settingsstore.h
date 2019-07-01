@@ -8,7 +8,7 @@
 
 #define CONFIG_INI "config.ini"
 
-#define SIZE_LIST 4
+#define SIZE_LIST 5
 
 class SettingsStore : public QObject
 {
@@ -35,6 +35,7 @@ public:
 
     static const QString index2board[SIZE_LIST];
     static const QString index2name[SIZE_LIST];
+    static const QString version;
 
     void copyDefaultSettings(const QString &fileName = CONFIG_INI,
                              bool overwrite = false);

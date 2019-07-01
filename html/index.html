@@ -12,9 +12,23 @@
 	</head>
 <body>
 	<xml id='startBlocks' style='display: none'> <block type='controls_setupLoop' deletable='true' x='20' y='5'></block> </xml>
-	<div id="wrap" style="height: 100%;">
+	<!--<div id="wrap" style="height: 100%;">
 		<div id="blockly" style="float: left; width: 100%;"></div>
 		<div id="code" style="float: none; width: 100%; height: 0%;"></div>
+    </div>-->
+	<div id="wrap" style="height: 100%;">
+        <div id="blockly" style="float: left; width: 66%;">
+			<span id="position"></span>
+			<div id="dragbar"></div>
+		</div>
+		<div id="code_doc" style="float: left; width: 34%;">
+          <div id="code" style="float: none; width: 100%; height: 100%;">
+		  </div>
+		  <span id="position1"></span>
+			<div id="dragbar1" style="float: none; width=100%;"></div>
+		  <div id="doc" style="float: none; width: 100%; height: 0%;">
+		  </div>
+		</div>
     </div>
 	
     <script src="javascript/jquery/dist/jquery.min.js"></script>
@@ -46,7 +60,7 @@
 	</script>
    
    <script language="JavaScript">
-	    if (window.FacilinoLanguage === undefined || window.FacilinoLanguage === null || window.FacilinoHardware===undefined || window.FacilinoHardware===null) {
+	    if (window.FacilinoLanguage === undefined || window.FacilinoLanguage === null || window.FacilinoProcessor===undefined || window.FacilinoProcessor===null) {
 			window.FacilinoLanguage = 'en-GB';
 			try {
 				
@@ -54,14 +68,14 @@
 				var temp = parameters[0].split("=");
 				window.FacilinoLanguage = unescape(temp[1]);
 				temp = parameters[1].split("=");
-				window.FacilinoHardware = unescape(temp[1]);
+				window.FacilinoProcessor = unescape(temp[1]);
 			}
-			catch(e){ window.FacilinoLanguage = 'en-GB'; window.FacilinoHardware='ArduinoNano';};
+			catch(e){ window.FacilinoLanguage = 'en-GB'; window.FacilinoProcessor='ArduinoNano';};
 		}		
 	    $.ajax({url: 'lang/facilino_'+window.FacilinoLanguage+'.json',dataType: "text",async: false,}).done(function(text) {window.langKeys = $.parseJSON(text).langs[window.FacilinoLanguage].keys;});
 		$.ajax({url: 'lang/facilino_en-GB.json',dataType: "text",async: false,}).done(function(text) {window.langKeysEng = $.parseJSON(text).langs['en-GB'].keys;});
 		$("#language").val(window.FacilinoLanguage);
-		$("#hardware").val(window.FacilinoHardware);
+		$("#processor").val(window.FacilinoProcessor);
 		var ev = document.createEvent('Event');
 		ev.initEvent('resize', true, true);
 		Facilino.load({ zoom: 1});
@@ -74,14 +88,18 @@
 		$('.blocklySvg').width('100%');
 		
 
-          Blockly.getMainWorkspace().addChangeListener(function () {
-		$('#code').html('<code class="c++"><pre>'
+          Blockly.getMainWorkspace().addChangeListener(function (event) {
+			if (event.type== Blockly.Events.DELETE)
+			{
+				Facilino.removedBlocks(event.ids);
+			}
+			$('#code').html('<code class="c++"><pre>'
 		  + escapeCode(Blockly.Arduino.workspaceToCode(Blockly.getMainWorkspace()))
 		  + '</pre></code>');
 		  // Highlight
-		$("pre").each(function (i, e) {
-		  hljs.highlightBlock(e);
-		});
+			$("pre").each(function (i, e) {
+				hljs.highlightBlock(e);
+			});
 		// webHelper is injected in Facilino
 		   try{
 		     window.webHelper.sourceChanged();
@@ -152,11 +170,85 @@
                 str = str.replace(/>/g, "&gt;");
                 return str;
             }
-
+			
             function resetWorkspace() {
                 Blockly.mainWorkspace.clear();
                 Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),Blockly.getMainWorkspace());
             }
+			
+			var dragging = false;
+		var dragging1 = false;
+			
+		$('#dragbar').mousedown(function(e){
+			e.preventDefault();
+       
+			dragging = true;
+			var code = $('#code_doc');
+			var ghostbar = $('<div>',
+                        {id:'ghostbar',
+                         css: {
+                                height: code.outerHeight(),
+                                top: code.offset().top,
+                                left: code.offset().left
+                               }
+                        }).appendTo('body');
+       
+				$(document).mousemove(function(e){
+					ghostbar.css("left",e.pageX+2);
+				});
+       
+		});
+		
+		$('#dragbar1').mousedown(function(e){
+			e.preventDefault();
+       
+			dragging1 = true;
+			var doc = $('#doc');
+			var ghostbar = $('<div>',
+                        {id:'ghostbar1',
+                         css: {
+                                width: doc.outerWidth(),
+                                top: doc.offset().top,
+                                left: doc.offset().left
+                               }
+                        }).appendTo('body');
+       
+				$(document).mousemove(function(e){
+					ghostbar.css("top",e.pageY+2);
+				});
+       
+		});
+
+		$(document).mouseup(function(e){
+			if (dragging) 
+			{
+				var percentage = (e.pageX / window.innerWidth) * 100;
+				var mainPercentage = 100-percentage;
+           
+				//$('#console').text("side:" + percentage + " main:" + mainPercentage);
+				
+				$('#blockly').css("width",percentage + "%");
+				$('#code_doc').css("width",mainPercentage + "%");
+				$('#ghostbar').remove();
+				$(document).unbind('mousemove');
+				Blockly.svgResize(Blockly.getMainWorkspace());
+				dragging = false;
+			}
+			
+			if (dragging1) 
+			{
+				var percentage = (e.pageY / window.innerHeight) * 100;
+				var mainPercentage = 100-percentage;
+           
+				//$('#console').text("side:" + percentage + " main:" + mainPercentage);
+           
+				$('#code').css("height",percentage + "%");
+				$('#doc').css("height",mainPercentage + "%");
+				$('#ghostbar1').remove();
+				$(document).unbind('mousemove');
+				dragging1 = false;
+			}
+		});
   </script>
 </body>
 </html>
