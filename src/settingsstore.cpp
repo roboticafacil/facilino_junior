@@ -53,14 +53,13 @@ QString SettingsStore::arduinoBoardFacilino() {
 }
 
 QString SettingsStore::arduinoIdePath() {
-/*#ifdef Q_OS_LINUX
+#ifdef Q_OS_LINUX
     return relativePath("arduino_ide_path", "/usr/bin/arduino");
 #elif defined(Q_OS_WIN)
     return relativePath("arduino_ide_path", "C:\\Program Files (x86)\\Arduino\\arduino_debug.exe");
 #elif defined(Q_OS_MAC)
     return relativePath("arduino_ide_path", "Arduino.app");
-#endif*/
-    return relativePath("arduino_ide_path", "C:\\Program Files (x86)\\Arduino\\arduino_debug.exe");
+#endif
 }
 
 QString SettingsStore::defaultLanguage() {
