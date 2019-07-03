@@ -343,22 +343,27 @@ pressed: { border: 1px };</string>
        <widget class="QComboBox" name="boardBox">
         <item>
          <property name="text">
-          <string>arduino:avr:uno</string>
+          <string>Arduino Uno</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>arduino:avr:nano:cpu=atmega328</string>
+          <string>Arduino Nano</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>arduino:avr:nano:cpu=atmega328old</string>
+          <string>Arduino Nano (old bootloader)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>arduino:avr:nano:cpu=atmega168</string>
+          <string>EasyPlug</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wemos D1 R32 (Uno Sensor Shield)</string>
          </property>
         </item>
        </widget>
@@ -880,7 +885,7 @@ pressed: { border: 1px };</string>
   <customwidget>
    <class>QBlocksWebView</class>
    <extends>QWidget</extends>
-   <header>qblockswebview.h</header>
+   <header location="global">qblockswebview.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

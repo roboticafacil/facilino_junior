@@ -51,6 +51,12 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "verdadeiro",
 				"LANG_LOGIC_BOOLEAN_FALSE": "falso",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Volve verdadeiro ou falso dependendo da selección.",
+				"LANG_LOGIC_STATE_HIGH": "alto",
+				"LANG_LOGIC_STATE_LOW": "baixo",
+				"LANG_LOGIC_STATE_TOOLTIP": "Devolve alto ou baixo segundo o seleccionado",
+				"LANG_LOGIC_STATE_HIGH_2": "ON",
+				"LANG_LOGIC_STATE_LOW_2": "OFF",
+				"LANG_LOGIC_STATE_TOOLTIP_2": "Retorna ou desactiva dependendo do que sexa seleccionado",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Compara se as dúas entradas son iguais.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Compara se as dúas entradas non son iguais entre si.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Compara se a primeira entrada é menor que a segunda entrada.",
@@ -145,7 +151,18 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Ler a saída dixital dun sensor de gas",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Le a presión barométrica do sensor barométrico BMP180 en Pa",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Le a temperatura do sensor barométrico BMP180 en graos centígrados",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estima a altitude. Se se proporciona a presión barométrica a nivel do mar, a estimación é máis precisa. Pola contra, asúmese unha presión barométrica de 101325 Pa."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estima a altitude. Se se proporciona a presión barométrica a nivel do mar, a estimación é máis precisa. Pola contra, asúmese unha presión barométrica de 101325 Pa.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Léase a humidade desde un sensor de solo analóxico (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Lee a luz dunha resistencia analóxica dependente da luz (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Escribe unha cadea de caracteres nunha pantalla OLED de 0.96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Pequeno",
+				"LANG_OLED_SIZE_MEDIUM": "Medio",
+				"LANG_OLED_SIZE_BIG": "Grande",
+				"LANG_OLED_POSITION_UP": "Arriba",
+				"LANG_OLED_POSITION_MIDDLE": "Medio",
+				"LANG_OLED_POSITION_DOWN": "Abaixo",
+				"LANG_OLED_CLEAR_TOOLTIP": "Elimina o contido da pantalla OLED"
+				
 			}
 		}
 	}

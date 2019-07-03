@@ -49,7 +49,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Hide graphs widget
     ui->graphsWidget->setVisible(false);
-
+    this->boardChanged=false;
 
     // Set monospaced font in the monitor
     const QFont fixedFont = QFontDatabase::systemFont(QFontDatabase::FixedFont);
@@ -81,6 +81,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // Set timer to update list of available ports
     updateSerialPorts();
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateSerialPorts()));
+    timer->start(5000);
 
     ui->consoleText->document()->setMaximumBlockCount(100);
     //ui->messagesWidget->show();
@@ -152,7 +155,7 @@ void MainWindow::arduinoExec(const QString &action) {
     arguments << action;
     // Board parameter
     if (ui->boardBox->count() > 0) {
-        arguments << "--board" << ui->boardBox->currentText();
+        arguments << "--board" << SettingsStore::index2board[ui->boardBox->currentIndex()];
     }
     // Port parameter
     if (ui->serialPortBox->count() > 0) {
@@ -332,7 +335,7 @@ void MainWindow::actionMonitor() {
         ui->mainToolBar->setVisible(true);
         ui->monitorToolBar->setVisible(false);
     } else {
-        serialPortOpen();
+        serialPortOpen(SettingsStore::index2baudrate[ui->boardBox->currentIndex()]);
         ui->consoleEdit->setFocus();
         ui->actionMonitor->setChecked(true);
         // Hide main toolbar, show monitor toolbar
@@ -631,9 +634,24 @@ void MainWindow::setArduinoBoard() {
 
 void MainWindow::onBoardChanged() {
     // Board changed, update settings
-    settings->setArduinoBoard(ui->boardBox->currentText());
-    settings->setArduinoBoardFacilino(SettingsStore::index2board[ui->boardBox->currentIndex()]);
-    loadBlockly();
+    if (!this->boardChanged)
+        {
+            settings->setArduinoBoard(ui->boardBox->currentText());
+            settings->setArduinoBoardFacilino(SettingsStore::index2name[ui->boardBox->currentIndex()]);
+            loadBlockly();
+            this->boardChanged=true;
+        }
+        else
+        {
+            QMessageBox::StandardButton reply;
+            reply = QMessageBox::question(this, tr("Board changed"), tr("Are you sure you want to change the board? All code will be lost!"),QMessageBox::Yes|QMessageBox::No);
+            if (reply == QMessageBox::Yes)
+            {
+                settings->setArduinoBoard(ui->boardBox->currentText());
+                settings->setArduinoBoardFacilino(SettingsStore::index2name[ui->boardBox->currentIndex()]);
+                loadBlockly();
+            }
+        }
 }
 
 void MainWindow::onLoadFinished(bool finished) {
@@ -690,7 +708,7 @@ void MainWindow::serialPortClose() {
     serial->disconnect(serial, SIGNAL(readyRead()), this, SLOT(readSerial()));
 }
 
-void MainWindow::serialPortOpen() {
+void MainWindow::serialPortOpen(qint32 baudrate) {
     // Open serial connection
     ui->webView->hide();
     ui->widgetConsole->show();
@@ -707,7 +725,7 @@ void MainWindow::serialPortOpen() {
 
     // Set default connection parameters
     serial->setPortName(ui->serialPortBox->currentText());
-    serial->setBaudRate(QSerialPort::Baud9600);
+    serial->setBaudRate(baudrate);
     serial->setDataBits(QSerialPort::Data8);
     serial->setParity(QSerialPort::NoParity);
     serial->setStopBits(QSerialPort::OneStop);
@@ -832,7 +850,7 @@ QStringList MainWindow::portList() {
         portName.insert(0, "/dev/");
 #endif
 #ifdef Q_OS_OSX
-        portName.insert(0, "/dev/tty.");
+        portName.insert(0, "/dev/");
 #endif
         serialPorts.append(portName);
     }

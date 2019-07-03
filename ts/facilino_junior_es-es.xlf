@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:trolltech="urn:trolltech:names:ts:document:1.0">
+  <file original="../src/aboutdialog.ui" datatype="x-trolltech-designer-ui" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="AboutDialog">
+      <trans-unit id="_msg1" approved="yes">
+        <source xml:space="preserve">Dialog</source>
+        <target xml:space="preserve">Diálogo</target>
+        <context-group purpose="location"><context context-type="linenumber">14</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg2">
+        <source xml:space="preserve">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facilino Junior 1.0.2 (all rights reserved). Visit our store &lt;a href=&quot;https://roboticafacil.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;roboticafacil.es&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Developer: Leopoldo Armesto Ángel&lt;/p&gt;&lt;p&gt;Collaborators:Alberto Delgado Romero&lt;/p&gt;&lt;p&gt;It uses the following open source projects: &lt;a href=&quot;http://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt 5&lt;/span&gt;&lt;/a&gt;, The Qt Company (LGPL license 2.1), &lt;a href=&quot;https://developers.google.com/blockly/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google Blockly&lt;/span&gt;&lt;/a&gt; (MIT license), &lt;a href=&quot;https://github.com/bq/roboblocks&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Roboblocks&lt;/span&gt;&lt;/a&gt;, bq (LGPL license), &lt;a href=&quot;http://visualino.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Visualino&lt;/span&gt;&lt;/a&gt;, Victor Ruíz (MIT license).&lt;/p&gt;&lt;p&gt;Icons made by:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot; http://www.flaticon.com/authors/madebyoliver&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Madebyoliver&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.freepik.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Freepik&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/plainicon&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Plainicon&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/gregor-cresnar&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Gregor Cresnar&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vectors-market&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Vectors Market&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; http://www.flaticon.com/authors/google&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/dimitry-miroliubov&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Dimitry Miroliubov&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; https://www.flaticon.com/authors/eleonor-wang&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Eleonor Wang&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/smashicons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Smashicons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/those-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Those Icons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">42</context></context-group>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="Obsolete_PO_entries" datatype="plaintext" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="AboutDialog">
+      <trans-unit id="_msg3" translate="no">
+        <source xml:space="preserve">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facilino Junior 1.0.2 (all rights reserved). Visit our store &lt;a href=&quot;https://roboticafacil.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;roboticafacil.es&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Developer: Leopoldo Armesto Ángel&lt;/p&gt;&lt;p&gt;It uses the following open source projects: &lt;a href=&quot;http://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt 5&lt;/span&gt;&lt;/a&gt;, The Qt Company (LGPL license 2.1), &lt;a href=&quot;https://developers.google.com/blockly/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google Blockly&lt;/span&gt;&lt;/a&gt; (MIT license), &lt;a href=&quot;https://github.com/bq/roboblocks&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Roboblocks&lt;/span&gt;&lt;/a&gt;, bq (LGPL license), &lt;a href=&quot;http://visualino.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Visualino&lt;/span&gt;&lt;/a&gt;, Victor Ruíz (MIT license).&lt;/p&gt;&lt;p&gt;Icons made by:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot; http://www.flaticon.com/authors/madebyoliver&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Madebyoliver&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.freepik.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Freepik&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/plainicon&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Plainicon&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/gregor-cresnar&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Gregor Cresnar&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vectors-market&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Vectors Market&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; http://www.flaticon.com/authors/google&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/dimitry-miroliubov&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Dimitry Miroliubov&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; https://www.flaticon.com/authors/eleonor-wang&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Eleonor Wang&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/smashicons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Smashicons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/those-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Those Icons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <target xml:space="preserve">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facilino Junior 1.0.0 (todos los derechos reservados). Visita nuestra tienda &lt;a href=&quot;https://roboticafacil.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;roboticafacil.es&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Desarrollador: Leopoldo Armesto Ángel&lt;/p&gt;&lt;p&gt;It uses the following open source projects: &lt;a href=&quot;http://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt 5&lt;/span&gt;&lt;/a&gt;, The Qt Company (LGPL license 2.1), &lt;a href=&quot;https://developers.google.com/blockly/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google Blockly&lt;/span&gt;&lt;/a&gt; (MIT license), &lt;a href=&quot;https://github.com/bq/roboblocks&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Roboblocks&lt;/span&gt;&lt;/a&gt;, bq (LGPL license), &lt;a href=&quot;http://visualino.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Visualino&lt;/span&gt;&lt;/a&gt;, Victor Ruíz (MIT license).&lt;/p&gt;&lt;p&gt;Icons made by:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot; http://www.flaticon.com/authors/madebyoliver&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Madebyoliver&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.freepik.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Freepik&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/plainicon&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Plainicon&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/gregor-cresnar&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Gregor Cresnar&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vectors-market&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Vectors Market&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; http://www.flaticon.com/authors/google&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/dimitry-miroliubov&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Dimitry Miroliubov&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; https://www.flaticon.com/authors/eleonor-wang&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Eleonor Wang&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/smashicons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Smashicons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/those-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Those Icons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; {1.0.2 ?} {0000f?} {0000f?} {5&lt;?} {2.1)?} {0000f?} {0000f?} {0000f?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?}</target>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="" datatype="plaintext" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="AboutDialog">
+      <trans-unit id="_msg4" translate="no" approved="yes">
+        <source xml:space="preserve">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facilino Junior 1.0.1 (all rights reserved). Visit our store &lt;a href=&quot;https://roboticafacil.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;roboticafacil.es&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Developer: Leopoldo Armesto Ángel&lt;/p&gt;&lt;p&gt;It uses the following open source projects: &lt;a href=&quot;http://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt 5&lt;/span&gt;&lt;/a&gt;, The Qt Company (LGPL license 2.1), &lt;a href=&quot;https://developers.google.com/blockly/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google Blockly&lt;/span&gt;&lt;/a&gt; (MIT license), &lt;a href=&quot;https://github.com/bq/roboblocks&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Roboblocks&lt;/span&gt;&lt;/a&gt;, bq (LGPL license), &lt;a href=&quot;http://visualino.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Visualino&lt;/span&gt;&lt;/a&gt;, Victor Ruíz (MIT license).&lt;/p&gt;&lt;p&gt;Icons made by:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot; http://www.flaticon.com/authors/madebyoliver&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Madebyoliver&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.freepik.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Freepik&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/plainicon&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Plainicon&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/gregor-cresnar&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Gregor Cresnar&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vectors-market&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Vectors Market&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; http://www.flaticon.com/authors/google&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/dimitry-miroliubov&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Dimitry Miroliubov&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; https://www.flaticon.com/authors/eleonor-wang&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Eleonor Wang&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/smashicons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Smashicons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/those-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Those Icons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <target xml:space="preserve">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facilino Junior 1.0.1 (todos los derechos reservados). Visita nuestra tienda &lt;a href=&quot;https://roboticafacil.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;roboticafacil.es&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Desarrollador: Leopoldo Armesto Ángel&lt;/p&gt;&lt;p&gt;It uses the following open source projects: &lt;a href=&quot;http://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt 5&lt;/span&gt;&lt;/a&gt;, The Qt Company (LGPL license 2.1), &lt;a href=&quot;https://developers.google.com/blockly/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google Blockly&lt;/span&gt;&lt;/a&gt; (MIT license), &lt;a href=&quot;https://github.com/bq/roboblocks&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Roboblocks&lt;/span&gt;&lt;/a&gt;, bq (LGPL license), &lt;a href=&quot;http://visualino.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Visualino&lt;/span&gt;&lt;/a&gt;, Victor Ruíz (MIT license).&lt;/p&gt;&lt;p&gt;Icons made by:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot; http://www.flaticon.com/authors/madebyoliver&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Madebyoliver&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.freepik.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Freepik&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/plainicon&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Plainicon&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/gregor-cresnar&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Gregor Cresnar&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vectors-market&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Vectors Market&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; http://www.flaticon.com/authors/google&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/dimitry-miroliubov&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Dimitry Miroliubov&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; https://www.flaticon.com/authors/eleonor-wang&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Eleonor Wang&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/smashicons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Smashicons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/those-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Those Icons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; {1.0.1 ?} {0000f?} {0000f?} {5&lt;?} {2.1)?} {0000f?} {0000f?} {0000f?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?} {0000f?} {0000f?} {3.0/?} {0000f?} {3.0 ?}</target>
+      </trans-unit>
+      <trans-unit id="_msg5" translate="no" approved="yes">
+        <source xml:space="preserve">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facilino Junior 1.0.0 (all rights reserved). Visit our store &lt;a href=&quot;https://roboticafacil.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;roboticafacil.es&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Developer: Leopoldo Armesto Ángel&lt;/p&gt;&lt;p&gt;It uses the following open source projects: &lt;a href=&quot;http://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt 5&lt;/span&gt;&lt;/a&gt;, The Qt Company (LGPL license 2.1), &lt;a href=&quot;https://developers.google.com/blockly/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google Blockly&lt;/span&gt;&lt;/a&gt; (MIT license), &lt;a href=&quot;https://github.com/bq/roboblocks&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Roboblocks&lt;/span&gt;&lt;/a&gt;, bq (LGPL license), &lt;a href=&quot;http://visualino.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Visualino&lt;/span&gt;&lt;/a&gt;, Victor Ruíz (MIT license).&lt;/p&gt;&lt;p&gt;Icons made by:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot; http://www.flaticon.com/authors/madebyoliver&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Madebyoliver&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.freepik.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Freepik&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/plainicon&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Plainicon&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/gregor-cresnar&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Gregor Cresnar&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vectors-market&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Vectors Market&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; http://www.flaticon.com/authors/google&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/dimitry-miroliubov&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Dimitry Miroliubov&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; https://www.flaticon.com/authors/eleonor-wang&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Eleonor Wang&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/smashicons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Smashicons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/those-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Those Icons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <target xml:space="preserve">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Facilino Junior 1.0.0 (todos los derechos reservados). Visita nuestra tienda &lt;a href=&quot;https://roboticafacil.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;roboticafacil.es&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Desarrollador: Leopoldo Armesto Ángel&lt;/p&gt;&lt;p&gt;It uses the following open source projects: &lt;a href=&quot;http://www.qt.io/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Qt 5&lt;/span&gt;&lt;/a&gt;, The Qt Company (LGPL license 2.1), &lt;a href=&quot;https://developers.google.com/blockly/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google Blockly&lt;/span&gt;&lt;/a&gt; (MIT license), &lt;a href=&quot;https://github.com/bq/roboblocks&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Roboblocks&lt;/span&gt;&lt;/a&gt;, bq (LGPL license), &lt;a href=&quot;http://visualino.net&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Visualino&lt;/span&gt;&lt;/a&gt;, Victor Ruíz (MIT license).&lt;/p&gt;&lt;p&gt;Icons made by:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot; http://www.flaticon.com/authors/madebyoliver&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Madebyoliver&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.freepik.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Freepik&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/plainicon&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Plainicon&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/gregor-cresnar&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Gregor Cresnar&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/vectors-market&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Vectors Market&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; http://www.flaticon.com/authors/google&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Google&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot; http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;http://www.flaticon.com/authors/dimitry-miroliubov&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Dimitry Miroliubov&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot; https://www.flaticon.com/authors/eleonor-wang&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Eleonor Wang&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/smashicons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Smashicons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.flaticon.com/authors/those-icons&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Those Icons&lt;/span&gt;&lt;/a&gt; from &lt;a href=&quot;http://www.flaticon.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.flaticon.com&lt;/span&gt;&lt;/a&gt; is licensed by &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;CC 3.0 BY&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</target>
+      </trans-unit>
+    </group>
+    <group restype="x-trolltech-linguist-context" resname="MainWindow">
+      <trans-unit id="_msg6" translate="no" approved="yes">
+        <source xml:space="preserve">arduino:avr:uno</source>
+        <target xml:space="preserve">arduino:avr:uno</target>
+      </trans-unit>
+      <trans-unit id="_msg7" translate="no" approved="yes">
+        <source xml:space="preserve">arduino:avr:nano:cpu=atmega328</source>
+        <target xml:space="preserve">arduino:avr:nano:cpu=atmega328</target>
+      </trans-unit>
+      <trans-unit id="_msg8" translate="no" approved="yes">
+        <source xml:space="preserve">arduino:avr:nano:cpu=atmega328old</source>
+        <target xml:space="preserve">arduino:avr:nano:cpu=atmega328old</target>
+      </trans-unit>
+      <trans-unit id="_msg9" translate="no" approved="yes">
+        <source xml:space="preserve">arduino:avr:nano:cpu=atmega168</source>
+        <target xml:space="preserve">arduino:avr:nano:cpu=atmega168</target>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="../src/mainwindow.ui" datatype="x-trolltech-designer-ui" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="MainWindow">
+      <trans-unit id="_msg10" approved="yes">
+        <source xml:space="preserve">Facilino Junior</source>
+        <target xml:space="preserve">Facilino Junior</target>
+        <context-group purpose="location"><context context-type="linenumber">29</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg11" approved="yes">
+        <source xml:space="preserve">X</source>
+        <target xml:space="preserve">X</target>
+        <context-group purpose="location"><context context-type="linenumber">248</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg12" approved="yes">
+        <source xml:space="preserve">Help us to improve this project. We really appreciate your support</source>
+        <target xml:space="preserve">Ayúdanos a mejorar este proyecto. Apreciamos tu contribución</target>
+        <context-group purpose="location"><context context-type="linenumber">315</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg13">
+        <source xml:space="preserve">Arduino Uno</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">346</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg14">
+        <source xml:space="preserve">Arduino Nano</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">351</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg15">
+        <source xml:space="preserve">Arduino Nano (old bootloader)</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">356</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg16">
+        <source xml:space="preserve">EasyPlug</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">361</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg17">
+        <source xml:space="preserve">Wemos D1 R32 (Uno Sensor Shield)</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">366</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg18" approved="yes">
+        <source xml:space="preserve">&amp;File</source>
+        <target xml:space="preserve">&amp;Archivo</target>
+        <context-group purpose="location"><context context-type="linenumber">425</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg19" approved="yes">
+        <source xml:space="preserve">Export as...</source>
+        <target xml:space="preserve">Exportar como...</target>
+        <context-group purpose="location"><context context-type="linenumber">429</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg20" approved="yes">
+        <source xml:space="preserve">&amp;Help</source>
+        <target xml:space="preserve">&amp;Ayuda</target>
+        <context-group purpose="location"><context context-type="linenumber">452</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg21" approved="yes">
+        <source xml:space="preserve">&amp;Tools</source>
+        <target xml:space="preserve">&amp;Herramientas</target>
+        <context-group purpose="location"><context context-type="linenumber">458</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg22" approved="yes">
+        <source xml:space="preserve">&amp;Edit</source>
+        <target xml:space="preserve">&amp;Edicion</target>
+        <context-group purpose="location"><context context-type="linenumber">470</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg23" approved="yes">
+        <source xml:space="preserve">toolBar</source>
+        <target xml:space="preserve">barra de herramientas</target>
+        <context-group purpose="location"><context context-type="linenumber">510</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg24" approved="yes">
+        <source xml:space="preserve">Verify</source>
+        <target xml:space="preserve">Verificar</target>
+        <context-group purpose="location"><context context-type="linenumber">530</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">533</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">703</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg25" approved="yes">
+        <source xml:space="preserve">Ctrl+R</source>
+        <target xml:space="preserve">Ctrl+R</target>
+        <context-group purpose="location"><context context-type="linenumber">536</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg26" approved="yes">
+        <source xml:space="preserve">Upload</source>
+        <target xml:space="preserve">Subir</target>
+        <context-group purpose="location"><context context-type="linenumber">545</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">548</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">613</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg27" approved="yes">
+        <source xml:space="preserve">Open</source>
+        <target xml:space="preserve">Abrir</target>
+        <context-group purpose="location"><context context-type="linenumber">557</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg28" approved="yes">
+        <source xml:space="preserve">Save</source>
+        <target xml:space="preserve">Guardar</target>
+        <context-group purpose="location"><context context-type="linenumber">566</context></context-group>
+        <context-group purpose="location"><context context-type="sourcefile">../src/mainwindow.cpp</context><context context-type="linenumber">207</context></context-group>
+        <context-group purpose="location"><context context-type="sourcefile">../src/mainwindow.cpp</context><context context-type="linenumber">491</context></context-group>
+        <context-group purpose="location"><context context-type="sourcefile">../src/mainwindow.cpp</context><context context-type="linenumber">495</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg29" approved="yes">
+        <source xml:space="preserve">New</source>
+        <target xml:space="preserve">Nuevo</target>
+        <context-group purpose="location"><context context-type="linenumber">575</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg30" approved="yes">
+        <source xml:space="preserve">Preferences</source>
+        <target xml:space="preserve">Preferencias</target>
+        <context-group purpose="location"><context context-type="linenumber">584</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">621</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg31" approved="yes">
+        <source xml:space="preserve">&amp;New</source>
+        <target xml:space="preserve">&amp;Nuevo</target>
+        <context-group purpose="location"><context context-type="linenumber">589</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">776</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">829</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg32" approved="yes">
+        <source xml:space="preserve">Ctrl+N</source>
+        <target xml:space="preserve">Ctrl+N</target>
+        <context-group purpose="location"><context context-type="linenumber">592</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">779</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">832</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg33" approved="yes">
+        <source xml:space="preserve">&amp;Open...</source>
+        <target xml:space="preserve">&amp;Abrir...</target>
+        <context-group purpose="location"><context context-type="linenumber">597</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">837</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg34" approved="yes">
+        <source xml:space="preserve">Ctrl+O</source>
+        <target xml:space="preserve">Ctrl+O</target>
+        <context-group purpose="location"><context context-type="linenumber">600</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">840</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg35" approved="yes">
+        <source xml:space="preserve">&amp;Save...</source>
+        <target xml:space="preserve">&amp;Guardar...</target>
+        <context-group purpose="location"><context context-type="linenumber">605</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">845</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg36" approved="yes">
+        <source xml:space="preserve">Ctrl+S</source>
+        <target xml:space="preserve">Ctrl+S</target>
+        <context-group purpose="location"><context context-type="linenumber">608</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">848</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg37" approved="yes">
+        <source xml:space="preserve">Ctrl+U</source>
+        <target xml:space="preserve">Ctrl+U</target>
+        <context-group purpose="location"><context context-type="linenumber">616</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">824</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg38" approved="yes">
+        <source xml:space="preserve">Ctrl+,</source>
+        <target xml:space="preserve">Ctrl+,</target>
+        <context-group purpose="location"><context context-type="linenumber">624</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg39" approved="yes">
+        <source xml:space="preserve">Quit</source>
+        <target xml:space="preserve">Salir</target>
+        <context-group purpose="location"><context context-type="linenumber">629</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg40" approved="yes">
+        <source xml:space="preserve">Ctrl+Q</source>
+        <target xml:space="preserve">Ctrl+Q</target>
+        <context-group purpose="location"><context context-type="linenumber">632</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">856</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg41" approved="yes">
+        <source xml:space="preserve">About</source>
+        <target xml:space="preserve">Acerca de</target>
+        <context-group purpose="location"><context context-type="linenumber">637</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg42" approved="yes">
+        <source xml:space="preserve">Show/hide messages</source>
+        <target xml:space="preserve">Mostrar/ocultar mensajes</target>
+        <context-group purpose="location"><context context-type="linenumber">645</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg43" approved="yes">
+        <source xml:space="preserve">Monitor</source>
+        <target xml:space="preserve">Monitor</target>
+        <context-group purpose="location"><context context-type="linenumber">663</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">666</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg44" approved="yes">
+        <source xml:space="preserve">Show/hide monitor</source>
+        <target xml:space="preserve">Mostrar/ocultar monitor</target>
+        <context-group purpose="location"><context context-type="linenumber">674</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg45" approved="yes">
+        <source xml:space="preserve">Ctrl+Shift+M</source>
+        <target xml:space="preserve">Ctrl+Shift+M</target>
+        <context-group purpose="location"><context context-type="linenumber">677</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg46" approved="yes">
+        <source xml:space="preserve">Sketch (.ino)</source>
+        <target xml:space="preserve">Sketch (.ino)</target>
+        <context-group purpose="location"><context context-type="linenumber">682</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg47" approved="yes">
+        <source xml:space="preserve">Save as...</source>
+        <target xml:space="preserve">Guardar como...</target>
+        <context-group purpose="location"><context context-type="linenumber">690</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">864</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg48" approved="yes">
+        <source xml:space="preserve">Include...</source>
+        <target xml:space="preserve">Incluir...</target>
+        <context-group purpose="location"><context context-type="linenumber">695</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg49" approved="yes">
+        <source xml:space="preserve">Include</source>
+        <target xml:space="preserve">Incluir</target>
+        <context-group purpose="location"><context context-type="linenumber">698</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg50" approved="yes">
+        <source xml:space="preserve">Show/hide icon labels</source>
+        <target xml:space="preserve">Mostrar/ocultar etiquetas</target>
+        <context-group purpose="location"><context context-type="linenumber">714</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg51" approved="yes">
+        <source xml:space="preserve">List of examples</source>
+        <target xml:space="preserve">Lista de ejemplos</target>
+        <context-group purpose="location"><context context-type="linenumber">719</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg52" approved="yes">
+        <source xml:space="preserve">Examples...</source>
+        <target xml:space="preserve">Ejemplos...</target>
+        <context-group purpose="location"><context context-type="linenumber">724</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg53" approved="yes">
+        <source xml:space="preserve">Graph</source>
+        <target xml:space="preserve">Gráfica</target>
+        <context-group purpose="location"><context context-type="linenumber">739</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg54" approved="yes">
+        <source xml:space="preserve">Zoom +</source>
+        <target xml:space="preserve">Zoom +</target>
+        <context-group purpose="location"><context context-type="linenumber">744</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg55" approved="yes">
+        <source xml:space="preserve">Ctrl++</source>
+        <target xml:space="preserve">Ctrl++</target>
+        <context-group purpose="location"><context context-type="linenumber">747</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg56" approved="yes">
+        <source xml:space="preserve">Zoom -</source>
+        <target xml:space="preserve">Zoom -</target>
+        <context-group purpose="location"><context context-type="linenumber">752</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg57" approved="yes">
+        <source xml:space="preserve">Ctrl+-</source>
+        <target xml:space="preserve">Ctrl+-</target>
+        <context-group purpose="location"><context context-type="linenumber">755</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg58" approved="yes">
+        <source xml:space="preserve">Undo</source>
+        <target xml:space="preserve">Deshacer</target>
+        <context-group purpose="location"><context context-type="linenumber">760</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg59" approved="yes">
+        <source xml:space="preserve">Ctrl+Z</source>
+        <target xml:space="preserve">Ctrl+Z</target>
+        <context-group purpose="location"><context context-type="linenumber">763</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg60" approved="yes">
+        <source xml:space="preserve">Redo</source>
+        <target xml:space="preserve">Rehacer</target>
+        <context-group purpose="location"><context context-type="linenumber">768</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg61" approved="yes">
+        <source xml:space="preserve">Ctrl+Y</source>
+        <target xml:space="preserve">Ctrl+Y</target>
+        <context-group purpose="location"><context context-type="linenumber">771</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg62" approved="yes">
+        <source xml:space="preserve">Delete</source>
+        <target xml:space="preserve">Borrar</target>
+        <context-group purpose="location"><context context-type="linenumber">788</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">791</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg63" approved="yes">
+        <source xml:space="preserve">Ctrl+D</source>
+        <target xml:space="preserve">Ctrl+D</target>
+        <context-group purpose="location"><context context-type="linenumber">794</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg64" approved="yes">
+        <source xml:space="preserve">Add</source>
+        <target xml:space="preserve">Añadir</target>
+        <context-group purpose="location"><context context-type="linenumber">803</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">806</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg65" approved="yes">
+        <source xml:space="preserve">Ctrl+A</source>
+        <target xml:space="preserve">Ctrl+A</target>
+        <context-group purpose="location"><context context-type="linenumber">809</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg66" approved="yes">
+        <source xml:space="preserve">Update</source>
+        <target xml:space="preserve">Actualizar</target>
+        <context-group purpose="location"><context context-type="linenumber">818</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">821</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg67" approved="yes">
+        <source xml:space="preserve">&amp;Quit</source>
+        <target xml:space="preserve">&amp;Salir</target>
+        <context-group purpose="location"><context context-type="linenumber">853</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg68" approved="yes">
+        <source xml:space="preserve">Copy</source>
+        <target xml:space="preserve">Copiar</target>
+        <context-group purpose="location"><context context-type="linenumber">873</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg69" approved="yes">
+        <source xml:space="preserve">Copy to clipboard</source>
+        <target xml:space="preserve">Copiar al portapapeles</target>
+        <context-group purpose="location"><context context-type="linenumber">876</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg70" approved="yes">
+        <source xml:space="preserve">Ctrl+C</source>
+        <target xml:space="preserve">Ctrl+C</target>
+        <context-group purpose="location"><context context-type="linenumber">879</context></context-group>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="../src/mainwindow.cpp" datatype="cpp" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="MainWindow">
+      <trans-unit id="_msg71" approved="yes">
+        <source xml:space="preserve">Examples</source>
+        <target xml:space="preserve">Ejemplos</target>
+        <context-group purpose="location"><context context-type="linenumber">197</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg72" approved="yes">
+        <source xml:space="preserve">Export</source>
+        <target xml:space="preserve">Exportar</target>
+        <context-group purpose="location"><context context-type="linenumber">211</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg73" approved="yes">
+        <source xml:space="preserve">Couldn&apos;t open file to save content: %1.</source>
+        <target xml:space="preserve">No se pudo abrir fichero para guardar contenido %1.</target>
+        <context-group purpose="location"><context context-type="linenumber">223</context></context-group>
+        <context-group purpose="location"><context context-type="linenumber">510</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg74" approved="yes">
+        <source xml:space="preserve">Done exporting: %1.</source>
+        <target xml:space="preserve">Exportación completa: %1.</target>
+        <context-group purpose="location"><context context-type="linenumber">229</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg75" approved="yes">
+        <source xml:space="preserve">Include file</source>
+        <target xml:space="preserve">Incluir fichero</target>
+        <context-group purpose="location"><context context-type="linenumber">319</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg76" approved="yes">
+        <source xml:space="preserve">Open file</source>
+        <target xml:space="preserve">Abrir fichero</target>
+        <context-group purpose="location"><context context-type="linenumber">405</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg77" approved="yes">
+        <source xml:space="preserve">Blockly Files %1</source>
+        <target xml:space="preserve">Ficheros Blockly %1</target>
+        <context-group purpose="location"><context context-type="linenumber">420</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg78" approved="yes">
+        <source xml:space="preserve">Couldn&apos;t open file to read content: %1.</source>
+        <target xml:space="preserve">No se pudo abrir el fichero para leer contenido: %1.</target>
+        <context-group purpose="location"><context context-type="linenumber">440</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg79" approved="yes">
+        <source xml:space="preserve">Done saving.</source>
+        <target xml:space="preserve">Guardar finalizado.</target>
+        <context-group purpose="location"><context context-type="linenumber">518</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg80" approved="yes">
+        <source xml:space="preserve">Changes successfully applied!</source>
+        <target xml:space="preserve">Los cambios se han aplicado correctamente!</target>
+        <context-group purpose="location"><context context-type="linenumber">558</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg81">
+        <source xml:space="preserve">Board changed</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">647</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg82">
+        <source xml:space="preserve">Are you sure you want to change the board? All code will be lost!</source>
+        <target xml:space="preserve"></target>
+        <context-group purpose="location"><context context-type="linenumber">647</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg83" approved="yes">
+        <source xml:space="preserve">Finished.</source>
+        <target xml:space="preserve">Finalizado.</target>
+        <context-group purpose="location"><context context-type="linenumber">667</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg84" approved="yes">
+        <source xml:space="preserve">Building...</source>
+        <target xml:space="preserve">Compilando...</target>
+        <context-group purpose="location"><context context-type="linenumber">676</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg85" approved="yes">
+        <source xml:space="preserve">There could be unsaved changes that could be lost. Do you want to save them before continuing?</source>
+        <target xml:space="preserve">Hay cambios sin guardar que podrían perderse. ¿Quieres guardar los cambios antes de continuar?</target>
+        <context-group purpose="location"><context context-type="linenumber">961</context></context-group>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="../src/settingsdialog.ui" datatype="x-trolltech-designer-ui" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="SettingsDialog">
+      <trans-unit id="_msg86" approved="yes">
+        <source xml:space="preserve">Dialog</source>
+        <target xml:space="preserve">Diálogo</target>
+        <context-group purpose="location"><context context-type="linenumber">14</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg87" approved="yes">
+        <source xml:space="preserve">Arduino IDE Program Path</source>
+        <target xml:space="preserve">Ruta Arduino IDE</target>
+        <context-group purpose="location"><context context-type="linenumber">48</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg88" approved="yes">
+        <source xml:space="preserve">...</source>
+        <target xml:space="preserve">...</target>
+        <context-group purpose="location"><context context-type="linenumber">71</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg89" approved="yes">
+        <source xml:space="preserve">Language</source>
+        <target xml:space="preserve">Idioma</target>
+        <context-group purpose="location"><context context-type="linenumber">103</context></context-group>
+      </trans-unit>
+    </group>
+  </body></file>
+  <file original="../src/settingsdialog.cpp" datatype="cpp" source-language="en" target-language="es-ES"><body>
+    <group restype="x-trolltech-linguist-context" resname="SettingsDialog">
+      <trans-unit id="_msg90" approved="yes">
+        <source xml:space="preserve">Arduino IDE</source>
+        <target xml:space="preserve">Arduino IDE</target>
+        <context-group purpose="location"><context context-type="linenumber">84</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg91" approved="yes">
+        <source xml:space="preserve">Default settings</source>
+        <target xml:space="preserve">Configuración por defecto</target>
+        <context-group purpose="location"><context context-type="linenumber">95</context></context-group>
+      </trans-unit>
+      <trans-unit id="_msg92" approved="yes">
+        <source xml:space="preserve">Are you sure? This will erase your current preferences and replace them with the defaults.</source>
+        <target xml:space="preserve">¿Estás seguro? Esto borrará tus preferencias actuales y las reemplazará por la de defecto.</target>
+        <context-group purpose="location"><context context-type="linenumber">96</context></context-group>
+      </trans-unit>
+    </group>
+  </body></file>
+</xliff>

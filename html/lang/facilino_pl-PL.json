@@ -51,6 +51,12 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "prawda",
 				"LANG_LOGIC_BOOLEAN_FALSE": "fałsz",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Zwraca prawdę lub fałsz.",
+				"LANG_LOGIC_STATE_HIGH": "high",
+				"LANG_LOGIC_STATE_LOW": "low",
+				"LANG_LOGIC_STATE_TOOLTIP": "Zwraca wysoki lub niski w zależności od wybranego",
+				"LANG_LOGIC_STATE_HIGH_2": "ON  ",
+				"LANG_LOGIC_STATE_LOW_2": "OFF",
+				"LANG_LOGIC_STATE_TOOLTIP_2": "Wraca lub wyłącza się w zależności od tego, co zostało wybrane",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Sprawdza czy obie wartości są równe.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Sprawdza czy obie wartości są różne.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Sprawdza czy pierwsza wartość jest mniejsza od drugiej.",
@@ -145,7 +151,17 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Reads the digital output of a gas sensor",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Odczytuje ciśnienie barometryczne z czujnika BMP180 w Pa",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Odczytuje temperaturę od BMP180 czujnika atmosferycznego w stopniach Celsjusza",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Szacunki wysokości. Jeżeli ciśnienie Sealevel jest ocena jest bardziej dokładna. W przeciwnym razie, przy ciśnieniu 101325 Pa sealevel zakłada."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Szacunki wysokości. Jeżeli ciśnienie Sealevel jest ocena jest bardziej dokładna. W przeciwnym razie, przy ciśnieniu 101325 Pa sealevel zakłada.",
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Odczytuje wilgotność z analogowego czujnika zabrudzenia (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Odczytuje światło z analogowego rezystora odbłyśnika światła (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Napisz ciąg znaków na ekranie OLED 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Mały",
+				"LANG_OLED_SIZE_MEDIUM": "Medium",
+				"LANG_OLED_SIZE_BIG": "Świetnie",
+				"LANG_OLED_POSITION_UP": "W górę",
+				"LANG_OLED_POSITION_MIDDLE": "Medium",
+				"LANG_OLED_POSITION_DOWN": "W dół",
+				"LANG_OLED_CLEAR_TOOLTIP": "Usuwa zawartość ekranu OLED"
 			}
 		}
 	}

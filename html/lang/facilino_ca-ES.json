@@ -5,6 +5,7 @@
 				"LANG_CATEGORY_PROCEDURES": "Funcions",
 				"LANG_CATEGORY_CONTROLS": "Control",
 				"LANG_CATEGORY_MATH": "Matemàtiques",
+				"LANG_CATEGORY_ADVANCED": "E/S básica",
 				"LANG_CATEGORY_SCREEN": "Pantalla",
 				"LANG_CATEGORY_LOGIC": "Lògica",
 				"LANG_CATEGORY_COMMUNICATION": "Comunicació",
@@ -50,6 +51,12 @@
 				"LANG_LOGIC_BOOLEAN_TRUE": "verdader",
 				"LANG_LOGIC_BOOLEAN_FALSE": "fals",
 				"LANG_LOGIC_BOOLEAN_TOOLTIP": "Retorna verdader o fals en funció del que hem seleccionat.",
+				"LANG_LOGIC_STATE_HIGH": "alt",
+				"LANG_LOGIC_STATE_LOW": "sota",
+				"LANG_LOGIC_STATE_TOOLTIP": "Retorna alt o sota en funció del que hem seleccionat.",
+				"LANG_LOGIC_STATE_HIGH_2": "ON",
+				"LANG_LOGIC_STATE_LOW_2": "OFF",
+				"LANG_LOGIC_STATE_TOOLTIP_2": "Retorna encès o apagat en funció del que seleccionat",
 				"LANG_LOGIC_COMPARE_TOOLTIP_EQ": "Compara si les dues entrades són iguals.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_NEQ": "Compara si les dues entrades no són iguals entre si.",
 				"LANG_LOGIC_COMPARE_TOOLTIP_LT": "Compara si la primera entrada és menor que la segona entrada.",
@@ -144,7 +151,17 @@
 				"LANG_GAS_DIGITAL_READ_TOOLTIP": "Llegeix l'eixida digital d'un sensor de gas",
 				"LANG_PRESSURE_READ_PRESSURE_BMP_TOOLTIP": "Llig la pressió barométrica del sensor BMP180 en Pa",
 				"LANG_TEMP_READ_TEMP_BMP_TOOLTIP": "Llig la temperatura del sensor baromètric BMP180 en graus Celsius",
-				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estima l'altitut. Si es proporciona la presió baromètrica a nivell del mar, la estimación és més precisa. Si no, s'assumexi una presió baromètrica de 101325 Pa."
+				"LANG_ALTITUDE_READ_ALTITUDE_BMP_TOOLTIP": "Estima l'altitut. Si es proporciona la presió baromètrica a nivell del mar, la estimación és més precisa. Si no, s'assumexi una presió baromètrica de 101325 Pa.",			
+				"LANG_HUMID_READ_HUMID_SOIL_TOOLTIP": "Llegeix la humitat des d'un sensor de sòl analògic (0-1023).",
+				"LANG_LIGHT_SENSOR_TOOLTIP": "Llegeix la llum d'una resistència analògica de dependència de la llum (0-1023).",
+				"LANG_OLED_DISPLAY_TOOLTIP": "Escriu una cadena de caràcters en una pantalla OLED de 0,96' 128x64",
+				"LANG_OLED_SIZE_SMALL": "Petit",
+				"LANG_OLED_SIZE_MEDIUM": "Mitjà",
+				"LANG_OLED_SIZE_BIG": "Gran",
+				"LANG_OLED_POSITION_UP": "A dalt",
+				"LANG_OLED_POSITION_MIDDLE": "Medi",
+				"LANG_OLED_POSITION_DOWN": "A baix",
+				"LANG_OLED_CLEAR_TOOLTIP": "Esborra el contingut de la pantalla OLED"
 			}
 		}
 	}

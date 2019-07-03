@@ -21,9 +21,6 @@ Releases
 
 Download the latests releases at [https://roboticafacil.es/descargas]
 
-Facilino requires a key (license) to activate advanced instructions. You can get it for free under some conditions (see [https://roboticafacil.es/licencia-facilino], for further details).
-
-
 Support
 -------
 
