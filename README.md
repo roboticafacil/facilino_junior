@@ -46,4 +46,4 @@ Credits
 License
 -------
 
-Check LICENSE file [https://github.com/roboticafacil/facilino/blob/master/LICENSE.md].
+Check LICENSE file [https://github.com/roboticafacil/facilino_junior/blob/master/LICENSE.md].
